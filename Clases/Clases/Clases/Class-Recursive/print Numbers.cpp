@@ -15,48 +15,33 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+void printAsc(int i,int n){
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	if(i==n+1)return;
+	cout<<i<<" ";
+	printAsc(i+1,n);
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
+void printDesc(int i,int n){
+	if(i==n+1)return;
+	printDesc(i+1,n);
+	cout<<i<<" ";
 }
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+	printAsc(1,5);
+	cout<<endl;
+	printDesc(1,5);
 	return 0;
 }
-
 
 
 

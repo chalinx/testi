@@ -20,43 +20,46 @@
 using namespace std;
 
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+void solve(){
+
+	int n; cin>>n;
+	int r[n];
+	fi(i,0,n,1)cin>>r[i];
+
+	int b=-1,cont=0;
+	fi(i,0,n,1){
+		if(r[i]==0){
+			cont++;continue;
+		}
+		b=(b&r[i]);
+		if(b==0){
+			cont++;
+			b=r[i++];
+		}
+	}
+ 
+	if(cont!=0)cout<<cont;
+	else cout<<cont+1;
+	cout<<endl;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
+
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+	
+	int n; cin>>n;
+	while(n--){
+		solve();
+	}
 	return 0;
 }
-
 
 
 

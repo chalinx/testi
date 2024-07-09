@@ -12,51 +12,45 @@
 #define fl(i,a,n,w) for(ll i=a;i<n;i+=w)
 #define fr first
 #define se second
+#define sz(a) a.size()
+#define mstr(r) for(auto i:r)cout<<i<<" ";
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+void solve(){
+	int n; cin>>n;
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	unordered_map<char,int> r;
+	string q; cin>>q;
+	char w='A';
+	fi(i,0,26,1)
+		r[w++]=i+1;
+	
+	fi(i,0,n,1)
+		r[q[i]]--;
+	
+	int cont=0;
+	for(auto i:r){
+		if(i.second<=0)cont++;
+	}
+	cout<<cont<<endl;
+
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

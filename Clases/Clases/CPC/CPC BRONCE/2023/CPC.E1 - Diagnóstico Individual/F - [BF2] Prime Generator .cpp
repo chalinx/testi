@@ -20,43 +20,46 @@
 using namespace std;
 
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+vector<bool> criba(int n){
+
+	vector<bool> primo(n+1,true);
+	primo[0]=primo[1]=false;
+	for(ll i =2;i*i<=n;i++){
+		if(primo[i]==true){
+			for(ll j=i*i;j<=n;j+=i){
+				primo[j]=false;
+			}
+		}
+	}
+	return primo;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
+bool primo(ll n){
+	if(n<2) return false; 
+	for(ll i=2;i*i<=n;i++){
+		if(n%i==0) return false;
+	}
+	return true;
 }
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
+	int n; cin>>n;
+	int a,b;
+	while(n--){
+		cin>>a>>b;
+		fl(i,a,b+1,1)
+			if(primo(i))cout<<i<<endl;
 
-
-
-
+		cout<<endl;
+	}
 	return 0;
 }
-
 
 
 

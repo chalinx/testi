@@ -1,3 +1,5 @@
+//https://codeforces.com/contest/1966/problem/A
+
 #include<bits/stdc++.h>
 #define ll long long int
 
@@ -12,51 +14,49 @@
 #define fl(i,a,n,w) for(ll i=a;i<n;i+=w)
 #define fr first
 #define se second
+#define sz(a) a.size()
+#define mstr(r) for(auto i:r)cout<<i<<" ";
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+void solve(){
+	int n,k; cin>>n>>k;
+	map<int,int> r;
+	int w;
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	fi(i,0,n,1){
+		cin>>w;r[w]++;
+	}
+	bool band=false;
+	for(auto i:r){
+		if(k<=i.second){
+			band=true;
+			break;
+		}
+	}
+	if(band)cout<<k-1;
+	else cout<<n;
+
+	cout<<endl;
+
+
+
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

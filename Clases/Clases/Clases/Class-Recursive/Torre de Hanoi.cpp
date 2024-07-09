@@ -18,45 +18,33 @@
 
 
 using namespace std;
+int sum=0;
+void tower_hannoi(int n,char a,char b,char c){
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	if(n==1){
+		cout<<a<<"->"<<c<<endl;
+		sum++;
+		return;
+	}
+	
+	tower_hannoi(n-1,a,c,b);
+	cout<<a<<"->"<<c<<endl; sum++;
+	tower_hannoi(n-1,b,a,c);
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+	tower_hannoi(3,'a','b','c');
+	cout<<sum;
 	return 0;
 }
-
 
 
 
