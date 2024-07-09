@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 #define ll long long int
-
+ 
 #define all(a) a.begin(),a.end()
 #define fast ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
 #define vi vector<int>
@@ -14,49 +14,58 @@
 #define se second
 #define pll pair<ll,ll>
 #define pii pair<int,int>
-
-
-
+ 
 using namespace std;
+ 
+ int a,b; 
+ int n;
+char q[101][101];
 
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+void solve(){
+cin>>a>>b;
+ cin>>n;
+  
+   for(int i=0;i<a;i++){
+   	for(int j=0;j<b;j++){
+   		q[i][j]='.';
+   	}
+   }
+
+	while(n--){
+		int q1,w1,q2,w2;
+		char r; 
+		cin>>q1>>w1>>q2>>w2>>r;
+		for(int i=q1-1;i<q2;i++){
+			for(int j=w1-1;j<w2;j++){
+				q[i][j]=r;
+			}
+		}		
+	}
+ 
+	for(int i=0;i<a;i++){
+		for(int j=0;j<b;j++){
+			cout<<q[i][j];
+		}
+		cout<<endl;
+	}
+ 
+ 
 }
-
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
-
+ 
+ 
 int main(){
-
-
+ 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+	}
+ 
+ 
 	return 0;
 }
-
-
-
-

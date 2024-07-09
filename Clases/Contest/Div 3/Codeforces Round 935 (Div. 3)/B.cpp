@@ -14,49 +14,33 @@
 #define se second
 #define pll pair<ll,ll>
 #define pii pair<int,int>
-
-
-
+#define ull unsigned long long
 using namespace std;
 
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+
+void solve(){
+
+	ull a,b,m; cin>>a>>b>>m;
+	
+	a=(m+1)%a==0?(m+1)/a:((m+1)/a)+1;
+	b=(m+1)%b==0?(m+1)/b:((m+1)/b)+1;
+	ull q=a+b;
+	cout<<q<<endl;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

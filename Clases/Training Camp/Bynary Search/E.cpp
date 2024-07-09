@@ -15,48 +15,49 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+int mcd(int a,int b) {
+	int aux;
+	while(b!=0){
+		aux=b;
+		b=a%b;
+		a=aux;
+	}
+	return a;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
+int mcm(int a, int b) {
+    return a/mcd(a,b)*b;
 }
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
+void solve(){
+	
+	int n; cin>>n;
+	int a; cin>>a;
+	int sum=a;
+	int mini=a;
+	fi(i,0,n-1,1){
+		cin>>a;
+		sum+=a;
+		mini=mcd(mini,a);
+	}
+
+	cout<<mini<<" "<<sum/mini<<endl;
 }
+
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

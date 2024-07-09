@@ -1,0 +1,1005 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"dijktstra"
+			],
+			[
+				"dis",
+				"dist"
+			],
+			[
+				"cp",
+				"cpsimple\tcpsimple"
+			],
+			[
+				"pu",
+				"push_back"
+			],
+			[
+				"pus",
+				"push_back"
+			],
+			[
+				"su",
+				"subprob"
+			],
+			[
+				"con",
+				"cont2"
+			],
+			[
+				"cont",
+				"cont1"
+			],
+			[
+				"final",
+				"final_res"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"re",
+				"reverse"
+			],
+			[
+				"val",
+				"valor_opt"
+			],
+			[
+				"ban",
+				"band2"
+			],
+			[
+				"d",
+				"duración"
+			],
+			[
+				"co",
+				"countb"
+			],
+			[
+				"fi",
+				"fibtabu"
+			],
+			[
+				"encon",
+				"encontrarModa"
+			],
+			[
+				"encont",
+				"encontrarModa"
+			],
+			[
+				"mod",
+				"modder"
+			],
+			[
+				"fr",
+				"freqizq"
+			],
+			[
+				"p",
+				"push_back"
+			],
+			[
+				"CP",
+				"cpsimple\tcpsimple"
+			],
+			[
+				"mer",
+				"mergSort"
+			],
+			[
+				"merg",
+				"mergSort"
+			],
+			[
+				"max",
+				"maxRank"
+			],
+			[
+				"stri",
+				"stringWindow"
+			],
+			[
+				"star",
+				"start_idx"
+			],
+			[
+				"sta",
+				"start_idx"
+			],
+			[
+				"win",
+				"window_size"
+			],
+			[
+				"wid",
+				"window_size"
+			],
+			[
+				"mul",
+				"multimap"
+			],
+			[
+				"nu",
+				"nums"
+			],
+			[
+				"po",
+				"pop_back"
+			],
+			[
+				"en",
+				"encontrado"
+			],
+			[
+				"uppe",
+				"upper"
+			],
+			[
+				"lo",
+				"lower"
+			],
+			[
+				"in",
+				"insert"
+			],
+			[
+				"com",
+				"compare"
+			],
+			[
+				"fin",
+				"finalY"
+			],
+			[
+				"al",
+				"almost"
+			],
+			[
+				"q",
+				"q2"
+			],
+			[
+				"Nmc",
+				"Nmcm"
+			],
+			[
+				"nmc",
+				"Nmcd"
+			],
+			[
+				"nm",
+				"Nmcm"
+			],
+			[
+				"prin",
+				"printAdjList"
+			],
+			[
+				"fo",
+				"formas"
+			],
+			[
+				"for",
+				"formas"
+			],
+			[
+				"fas",
+				"fastPower"
+			],
+			[
+				"pri",
+				"printDesc"
+			],
+			[
+				"ar",
+				"arraysorted2"
+			],
+			[
+				"a",
+				"arraysorted"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"tol",
+				"tolp"
+			],
+			[
+				"r",
+				"r1"
+			],
+			[
+				"ve",
+				"vec"
+			],
+			[
+				"Ha",
+				"hanoi"
+			],
+			[
+				"dist",
+				"distance"
+			],
+			[
+				"dife",
+				"diferencia"
+			],
+			[
+				"dee",
+				"decode"
+			],
+			[
+				"sqr",
+				"sqrt_2"
+			],
+			[
+				"lee",
+				"leer2"
+			],
+			[
+				"AR",
+				"archivo2"
+			],
+			[
+				"arc",
+				"archivo2"
+			],
+			[
+				"aux",
+				"aux1"
+			],
+			[
+				"tam",
+				"tamr"
+			],
+			[
+				"c",
+				"cont2"
+			],
+			[
+				"clave_com",
+				"entry_clave_compartida"
+			],
+			[
+				"entry_clav",
+				"entry_clave_compartida"
+			],
+			[
+				"clave",
+				"entry_clave_secreta"
+			],
+			[
+				"clave_",
+				"clave_privada"
+			],
+			[
+				"clav",
+				"clave_compartida_numero"
+			],
+			[
+				"ge",
+				"get"
+			],
+			[
+				"et",
+				"etiqueta"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "11.cpp",
+			"settings":
+			{
+				"buffer_size": 924,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\ncout>>"
+					},
+					"CAAAAMkCAAAAAAAAygIAAAAAAAAAAAAAygIAAAAAAADLAgAAAAAAAAAAAADLAgAAAAAAAMwCAAAAAAAAAAAAAMwCAAAAAAAAzQIAAAAAAAAAAAAAzQIAAAAAAADOAgAAAAAAAAAAAADOAgAAAAAAAM8CAAAAAAAAAAAAAM8CAAAAAAAA0AIAAAAAAAAAAAAA0AIAAAAAAADRAgAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADJAgAAAAAAAMkCAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					6,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAANECAAAAAAAA0wIAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADRAgAAAAAAANECAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					7,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+					},
+					"AgAAANECAAAAAAAA0QIAAAAAAAABAAAAItECAAAAAAAA0QIAAAAAAAABAAAAIg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADSAgAAAAAAANICAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					8,
+					2,
+					"left_delete",
+					null,
+					"AgAAANACAAAAAAAA0AIAAAAAAAABAAAAPs8CAAAAAAAAzwIAAAAAAAABAAAAPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADRAgAAAAAAANECAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "<<"
+					},
+					"AgAAAM8CAAAAAAAA0AIAAAAAAAAAAAAA0AIAAAAAAADRAgAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADPAgAAAAAAAM8CAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					10,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAANECAAAAAAAA0wIAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADRAgAAAAAAANECAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "asd"
+					},
+					"AwAAANICAAAAAAAA0wIAAAAAAAAAAAAA0wIAAAAAAADUAgAAAAAAAAAAAADUAgAAAAAAANUCAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADSAgAAAAAAANICAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAANYCAAAAAAAA1wIAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADWAgAAAAAAANYCAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "10.cpp",
+			"settings":
+			{
+				"buffer_size": 895,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "input.txt",
+			"settings":
+			{
+				"buffer_size": 2,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "output.txt",
+			"settings":
+			{
+				"buffer_size": 4,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Run Base"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Run Base"
+				]
+			],
+			[
+				"Packages/User/C++.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"terminus: op",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"type",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color s",
+				"UI: Select Color Scheme"
+			],
+			[
+				"UI:SE",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 213.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Competitiva"
+	],
+	"file_history":
+	[
+		"/D/Competitiva/Competitiva.sublime-project",
+		"/D/Competitiva/Clases/Bit-Manipulation/Get-Manipulation.cpp",
+		"/D/Competitiva/output.txt",
+		"/D/Competitiva/input.txt",
+		"/D/Competitiva/Clases/Graph-Grafos/bellman_ford.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/Prim.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/Dijkstra.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/BipartitoDFS.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/BFS.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/Boruvska.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/Kruskal.cpp",
+		"/D/Competitiva/Clases/Graph-Grafos/DSU.cpp",
+		"/D/CppCodeF/Games800_1500/B. 01 Game.cpp",
+		"/D/Competitiva/Pila de problemas/45.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/potenciaInversa.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/pregunta 4b.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/pregunta 3.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/potencia.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/pregunta 2.py",
+		"/D/Competitiva/11.cpp",
+		"/D/Competitiva/Floyd Warshall.cpp",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/frontsaavp/src/app/app.module.ts",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/frontsaavp/src/app/personas/personas.component.ts",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/frontsaavp/src/app/app.component.html",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/firstproject/src/app/app.component.ts",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/firstproject/src/test.js",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/firstproject/src/app/app.component.html",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/firstproject/package.json",
+		"/C/Users/BIENVENIDO/Desktop/Ingenieria de Software/ProyectoUNI/241CC341SpringSAAVPFrontend/firstproject/src/test.ts",
+		"/D/Competitiva/test/qweqwe.ts",
+		"/D/Competitiva/test/qweqwe.js",
+		"/C/Users/BIENVENIDO/AppData/Roaming/Sublime Text/Packages/User/TypeScript.sublime-build",
+		"/D/Competitiva/test/Dijsktra.cpp",
+		"/D/Competitiva/Pila de problemas/Gramatica.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/puntofijo.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/secante.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/newtonSNL.py",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/quasiNewtonBroyde.py",
+		"/D/Competitiva/Pila de problemas/Potencia.py",
+		"/D/Competitiva/Pila de problemas/testt.py",
+		"/D/Competitiva/Pila de problemas/MSTPRIM.cpp",
+		"/D/Competitiva/Pila de problemas/44.cpp",
+		"/D/Competitiva/Pila de problemas/43.cpp",
+		"/D/Competitiva/Pila de problemas/42.cpp",
+		"/D/Competitiva/Pila de problemas/41.cpp",
+		"/D/Competitiva/Pila de problemas/40.cpp",
+		"/D/Competitiva/Pila de problemas/tessss.py",
+		"/D/Competitiva/tareakruskal.cpp",
+		"/C/Users/BIENVENIDO/Downloads/bfspuntero.cpp",
+		"/D/Competitiva/Pila de problemas/39.cpp",
+		"/D/Competitiva/Pila de problemas/tes2.cpp",
+		"/D/Competitiva/test.cpp",
+		"/D/Competitiva/tareaBoruska.cpp",
+		"/D/Competitiva/testtt.cpp",
+		"/D/Competitiva/Pila de problemas/39",
+		"/D/Competitiva/test/BacktrakingKsnpack.cpp",
+		"/D/Competitiva/test/MultiplicarMatrices.cpp",
+		"/D/Competitiva/Pila de problemas/38.cpp",
+		"/D/Competitiva/Pila de problemas/37.cpp",
+		"/D/Competitiva/Pila de problemas/36.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/Eliminación Gausiana.py",
+		"/D/Competitiva/test/tsasd.cpp",
+		"/D/Competitiva/test/2ewrth.cpp",
+		"/D/Competitiva/HUFFMAN.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/div2_3__1.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/SUPW Memorización.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/SUPW recursion.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/SUPW(SCHOOL UNION PRACTICAL WORK).cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/recu.py",
+		"/D/Competitiva/Pila de problemas/35.cpp",
+		"/D/Competitiva/Pila de problemas/34.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/bits encendidos.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/Triangular Superior.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/Dootlite.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/Fibonacci.cpp",
+		"/D/Competitiva/Clases/Programaciòn Dinamica/no consecutives 1s.cpp",
+		"/D/Competitiva/test/djfgkdls.cpp",
+		"/D/Competitiva/test/TESTSD.cpp",
+		"/D/Competitiva/test/testtt.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Sistema de Ecuaciones Lineales/Triangular Superior",
+		"/D/Competitiva/Pila de problemas/33.cpp",
+		"/D/Competitiva/test/t11.cpp",
+		"/D/Competitiva/test/t10.cpp",
+		"/D/Competitiva/test/t9.cpp",
+		"/D/Competitiva/test/t8.cpp",
+		"/D/Competitiva/test/t7.cpp",
+		"/D/Competitiva/test/t6.cpp",
+		"/D/Competitiva/test/t5.cpp",
+		"/D/Competitiva/test/t4.cpp",
+		"/D/Competitiva/test/t3.cpp",
+		"/D/Competitiva/test/tes3.cpp",
+		"/D/Competitiva/Clases/Divide and Conquer/Merge Sort.cpp",
+		"/D/Competitiva/test/test5.cpp",
+		"/D/Competitiva/test/test4.cpp",
+		"/D/Competitiva/test/test2.cpp",
+		"/D/Competitiva/test/test.cpp",
+		"/C/Program Files/Sublime Text/ALGORITMOS.txt",
+		"/D/Competitiva/Pila de problemas/32.cpp",
+		"/D/Competitiva/Pila de problemas/31.cpp",
+		"/D/Competitiva/Pila de problemas/30.cpp",
+		"/D/Competitiva/Pila de problemas/29.cpp",
+		"/D/Competitiva/Pila de problemas/28.cpp",
+		"/D/Teoria PC/Automatas/Grafos clase .cpp",
+		"/D/Teoria PC/Automatas/auxi.py",
+		"/D/Teoria PC/Automatas/graf.py",
+		"/D/Teoria PC/Automatas/Grafo dirigido.py",
+		"/D/Competitiva/Pila de problemas/27.cpp",
+		"/D/Competitiva/Pila de problemas/26.cpp",
+		"/D/Competitiva/Pila de problemas/25.cpp",
+		"/D/Competitiva/Pila de problemas/24.cpp",
+		"/D/Competitiva/Clases/Divide and Conquer/BinarySearch.cpp",
+		"/D/Competitiva/Clases/Class-Binary Search/binarysearch.cpp",
+		"/D/Competitiva/Pila de problemas/23.cpp",
+		"/D/Competitiva/Pila de problemas/22.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Representación Base/decimal base 2.cpp",
+		"/D/Competitiva/Analisis y modelamiento Numerico I/Representación Base/base 10 a 2.cpp",
+		"/D/Competitiva/Contest/div1+div2/B.cpp",
+		"/D/Competitiva/Practice/CSES/Traffic Lights.cpp",
+		"/D/Competitiva/Contest/div1+div2/a.cpp",
+		"/D/Competitiva/Contest/div1+div2/A-cpp",
+		"/D/Competitiva/Pila de problemas/21.cpp",
+		"/D/Competitiva/Pila de problemas/20.cpp",
+		"/D/Competitiva/Pila de problemas/19.cpp",
+		"/D/Competitiva/Pila de problemas/18.cpp",
+		"/D/Competitiva/Pila de problemas/17.cpp",
+		"/D/Competitiva/Pila de problemas/16.cpp",
+		"/D/Competitiva/Pila de problemas/15.cpp",
+		"/D/Competitiva/Pila de problemas/14.cpp"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 619.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "11.cpp",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								744,
+								744
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "10.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "input.txt",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "output.txt",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.698076923077,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 161.0
+	},
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "Competitiva.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 2,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

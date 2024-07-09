@@ -12,51 +12,43 @@
 #define fl(i,a,n,w) for(ll i=a;i<n;i+=w)
 #define fr first
 #define se second
+#define sz(a) a.size()
+#define mstr(r) for(auto i:r)cout<<i<<" ";
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+void solve(){
+	
+	int n; cin>>n;
+	int q;
+	int cont=0,cont2=0;
+	fi(i,1,3*n+1,1){
+		cin>>q;
+		if(q)cont++;
+		if(i%3==0){
+			if(cont>=2) cont2++;
+			cont=0;
+		}
+	}
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	cout<<cont2;
+
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t=1;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

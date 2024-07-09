@@ -1,0 +1,140 @@
+#include <bits/stdc++.h>
+#define ll long long int
+#define all(a) a.begin(),a.end()
+#define fast ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
+#define vi vector<int>
+#define vll vector<ll>
+#define vct vector
+#define pb push_back
+#define er erase
+#define fi(i,a,n,w) for(int i =a;i<n;i+=w)
+#define fl(i,a,n,w) for(ll i=a;i<n;i+=w)
+#define fr first
+#define se second
+#define sz(a) a.size()
+#define mstr(r) for(auto i:r)cout<<i<<" ";
+#define pll pair<ll,ll>
+#define pii pair<int,int>
+
+using namespace std;
+
+class DSU {
+    int *parent;
+    int *rank;
+
+public:
+    DSU(int n) {
+        parent = new int[n];
+        rank = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            parent[i] = -1;
+            rank[i] = 1;
+        }
+    }
+
+    int find(int i) {
+        if(parent[i] == -1) return i;
+        return parent[i] = find(parent[i]);
+    }
+
+    void unite(int x, int y) {
+        int s1 = find(x);
+        int s2 = find(y);
+
+        if(s1 != s2) {
+            if(rank[s1] < rank[s2]) {
+                parent[s1] = s2;
+                rank[s2] += rank[s1];
+            } else {
+                parent[s2] = s1;
+                rank[s1] += rank[s2];
+            }
+        }
+    }
+};
+
+class Graph {
+    vector<vector<int>> edgelist;
+    int V;
+
+public:
+    Graph(int V) {
+        this->V = V;
+    }
+
+    void addEdge(int x, int y, int w) {
+        edgelist.push_back({w, x, y});
+    }
+
+    int boruvka_mst() {
+        DSU dsu(V);
+        vector<int> cheapest(V, -1);
+        int numTrees = V;
+        int MSTweight = 0;
+
+        while (numTrees > 1) {
+            fill(cheapest.begin(), cheapest.end(), -1);
+
+            for (auto &edge : edgelist) {
+                int w = edge[0];
+                int x = edge[1];
+                int y = edge[2];
+                int set1 = dsu.find(x), set2 = dsu.find(y);
+
+                if (set1 != set2) {
+                    if (cheapest[set1] == -1 || edgelist[cheapest[set1]][0] > w)
+                        cheapest[set1] = &edge - &edgelist[0];
+                    if (cheapest[set2] == -1 || edgelist[cheapest[set2]][0] > w)
+                        cheapest[set2] = &edge - &edgelist[0];
+                }
+            }
+
+            for (int i = 0; i < V; i++) {
+                if (cheapest[i] != -1) {
+                    int w = edgelist[cheapest[i]][0];
+                    int x = edgelist[cheapest[i]][1];
+                    int y = edgelist[cheapest[i]][2];
+                    int set1 = dsu.find(x), set2 = dsu.find(y);
+
+                    if (set1 != set2) {
+                        dsu.unite(set1, set2);
+                        MSTweight += w;
+                        cout << "Edge " << x << "-" << y << " included in MST with weight " << w << endl;
+                        numTrees--;
+                    }
+                }
+            }
+        }
+
+        return MSTweight;
+    }
+};
+
+void solve() {
+    Graph g(4);
+
+    g.addEdge(0, 1, 1);
+    g.addEdge(1, 3, 3);
+    g.addEdge(3, 2, 4);
+    g.addEdge(2, 0, 2);
+    g.addEdge(0, 3, 2);
+    g.addEdge(1, 2, 2);
+
+    cout << g.boruvka_mst() << endl;
+}
+
+int main() {
+#ifndef ONLINE_JUDGE
+    freopen("D:/Competitiva/input.txt", "r", stdin);
+    freopen("D:/Competitiva/output.txt", "w", stdout);
+#endif
+    fast
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}

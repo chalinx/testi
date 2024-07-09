@@ -19,44 +19,32 @@
 
 using namespace std;
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+bool arraysorted(int arr[],int i,int n){
+	if(i==n-1)return true;
+	if(arr[i]<arr[i+1]&&arraysorted(arr,i+1,n))return true;
+	return false;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
+bool arraysorted2(int arr[],int n){
+	if(n==1 or n==0) return true;
+	if(arr[0]<arr[1] and arraysorted2(arr+1,n-1))return true;
+	return false;
 }
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int arr[6]={1,2,3,4,5,6};
+	int n= sizeof(arr)/sizeof(arr[0]);
+	cout<<arraysorted2(arr,n);
 
 	return 0;
 }
-
 
 
 

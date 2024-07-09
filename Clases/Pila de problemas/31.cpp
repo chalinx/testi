@@ -12,51 +12,66 @@
 #define fl(i,a,n,w) for(ll i=a;i<n;i+=w)
 #define fr first
 #define se second
+#define sz(a) a.size()
+#define mstr(r) for(auto i:r)cout<<i<<" ";
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+void solve(){
+	int n,k; cin>>n>>k;
+	
+	vi r(n);
+	fi(i,0,n,1)cin>>r[i];
+	int maxi=r[k-1];
+	int j=k-1;
+	vi w;
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	fi(i,0,n,1){
+		if(maxi<r[i])w.pb(i);
+		if(sz(w)==2)break;
+	}
+	maxi=0;
+	//cout<<sz(w)<<endl;
+	if(sz(w)==1) {
+		if(j>w[0])
+			maxi=(w[0]!=0)?max(w[0]-1,j-w[0]):j-1;
+		else
+			maxi=w[0]-1;
+	}
+	else{
+		if(j>w[0] and j<w[1])
+			maxi=(w[0]!=0)?max(w[0]-1,j-w[0]):j-1;
+		
+
+		if(j>w[0] and j>w[1])
+			maxi=(w[0]!=0)?max(w[0]-1,w[1]-w[0]):w[1]-1;
+		
+		if(j<w[0])
+			maxi=w[0]-1;
+
+		
+	}
+	cout<<maxi<<endl;
+
+	
+
+
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

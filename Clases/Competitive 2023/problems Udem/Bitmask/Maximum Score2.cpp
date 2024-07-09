@@ -19,44 +19,57 @@
 
 using namespace std;
 
+int matrixScore(vector<vector<int>> grid) {
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+
+	for(int i=0;i<grid.size();i++){
+		if(grid[i][0]==0){
+			for(int j=0;j<grid[i].size();j++){
+				grid[i][j]=1-grid[i][j];
+			}
+		}
+		
+	}
+
+	int maxCol;
+	for(int j=0;j<grid[0].size();j++){
+		maxCol=0;
+		for (int i = 0; i < grid.size(); ++i){
+			if(grid[j][i]==1)
+				maxCol++;
+		}
+	}
+
+		
+		
+
+
+
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
+	
+	vector<vector<int>> r= {{1,1,1,},{1,1,3}};
 
+	for(int i =0;i<r.size();i++){	//filas
+		for(int j=0;j<r[i].size();j++){ //columnas
+			cout<<r[i][j];
+		}
+		cout<<endl;
+	}
 
 
 
 	return 0;
 }
-
 
 
 

@@ -15,48 +15,51 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+void solve(){
+	int n; cin>>n;
+	vi r(n+1,0);
+	int a; 
+	bool band;
+	fi(i,0,n,1){
+		cin>>a;
+		band=false;
+		while(a>0){
+			if(a<=n){
+				fi(i,1,n+1,1){
+					if(i==a&&r[i]==0){
+						band=true;
+						r[i]=1;break;
+					}
+				}
+			}
+			if(band)break;
+			a/=2;
+		}
+	}
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	fi(i,1,n+1,1){
+		if(r[i]==0){
+			cout<<"NO";return;
+		}
+	}
+	cout<<"YES";
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
-
+	
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t; cin>>t;
+	while(t--){
+		solve();
+		cout<<endl;
+	}
 
 	return 0;
 }
-
-
-
-
