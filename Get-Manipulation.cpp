@@ -29,6 +29,7 @@ int Get_manipulation(int n,int i){
 void Set_manipulation(int &n, int i){
 	int mask=(1<<i);
 	n=(n|mask);
+	cout<<"asd";
 }
 
 void clear_manipulation(int &n,int i){
