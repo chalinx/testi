@@ -1,0 +1,3237 @@
+C. Given Length and Sum of Digits...
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You have a positive integer m and a non-negative integer s. Your task is to find the smallest and the largest of the numbers that have length m and sum of digits s. The required numbers should be non-negative integers written in the decimal base without leading zeroes.
+
+Input
+The single line of the input contains a pair of integers m, s (1 ≤ m ≤ 100, 0 ≤ s ≤ 900) — the length and the sum of the digits of the required numbers.
+
+Output
+In the output print the pair of the required non-negative integer numbers — first the minimum possible number, then — the maximum possible number. If no numbers satisfying conditions required exist, print the pair of numbers "-1 -1" (without the quotes).
+
+A. Ilya and Bank Account
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Ilya is a very clever lion, he lives in an unusual city ZooVille. In this city all the animals have their rights and obligations. Moreover, they even have their own bank accounts. The state of a bank account is an integer. The state of a bank account can be a negative number. This means that the owner of the account owes the bank money.
+
+Ilya the Lion has recently had a birthday, so he got a lot of gifts. One of them (the gift of the main ZooVille bank) is the opportunity to delete the last digit or the digit before last from the state of his bank account no more than once. For example, if the state of Ilya's bank account is -123, then Ilya can delete the last digit and get his account balance equal to -12, also he can remove its digit before last and get the account balance equal to -13. Of course, Ilya is permitted not to use the opportunity to delete a digit from the balance.
+
+Ilya is not very good at math, and that's why he asks you to help him maximize his bank account. Find the maximum state of the bank account that can be obtained using the bank's gift.
+
+Input
+The single line contains integer n (10 ≤ |n| ≤ 109) — the state of Ilya's bank account.
+
+Output
+In a single line print an integer — the maximum state of the bank account that Ilya can get.
+
+A. Mishka and Game
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Mishka is a little polar bear. As known, little bears loves spending their free time playing dice for chocolates. Once in a wonderful sunny morning, walking around blocks of ice, Mishka met her friend Chris, and they started playing the game.
+
+Rules of the game are very simple: at first number of rounds n is defined. In every round each of the players throws a cubical dice with distinct numbers from 1 to 6 written on its faces. Player, whose value after throwing the dice is greater, wins the round. In case if player dice values are equal, no one of them is a winner.
+
+In average, player, who won most of the rounds, is the winner of the game. In case if two players won the same number of rounds, the result of the game is draw.
+
+Mishka is still very little and can't count wins and losses, so she asked you to watch their game and determine its result. Please help her!
+
+Input
+The first line of the input contains single integer n n (1 ≤ n ≤ 100) — the number of game rounds.
+
+The next n lines contains rounds description. i-th of them contains pair of integers mi and ci (1 ≤ mi,  ci ≤ 6) — values on dice upper face after Mishka's and Chris' throws in i-th round respectively.
+
+Output
+If Mishka is the winner of the game, print "Mishka" (without quotes) in the only line.
+
+If Chris is the winner of the game, print "Chris" (without quotes) in the only line.
+
+If the result of the game is draw, print "Friendship is magic!^^" (without quotes) in the only line.
+
+A. Codeforces Checking
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a lowercase Latin character (letter), check if it appears in the string codeforces
+.
+
+Input
+The first line of the input contains an integer t
+ (1≤t≤26
+) — the number of test cases.
+
+The only line of each test case contains a character c
+ — a single lowercase Latin character (letter).
+
+Output
+For each test case, output "YES" (without quotes) if c
+ satisfies the condition, and "NO" (without quotes) otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+A. Plus or Minus
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given three integers a
+, b
+, and c
+ such that exactly one of these two equations is true:
+
+a+b=c
+a−b=c
+Output + if the first equation is true, and - otherwise.
+Input
+The first line contains a single integer t
+ (1≤t≤162
+) — the number of test cases.
+
+The description of each test case consists of three integers a
+, b
+, c
+ (1≤a,b≤9
+, −8≤c≤18
+). The additional constraint on the input: it will be generated so that exactly one of the two equations will be true.
+
+Output
+For each test case, output either + or - on a new line, representing the correct equation.
+
+A. Die Roll
+time limit per test1 second
+memory limit per test64 megabytes
+inputstandard input
+outputstandard output
+Yakko, Wakko and Dot, world-famous animaniacs, decided to rest from acting in cartoons, and take a leave to travel a bit. Yakko dreamt to go to Pennsylvania, his Motherland and the Motherland of his ancestors. Wakko thought about Tasmania, its beaches, sun and sea. Dot chose Transylvania as the most mysterious and unpredictable place.
+
+But to their great regret, the leave turned to be very short, so it will be enough to visit one of the three above named places. That's why Yakko, as the cleverest, came up with a truly genius idea: let each of the three roll an ordinary six-sided die, and the one with the highest amount of points will be the winner, and will take the other two to the place of his/her dreams.
+
+Yakko thrown a die and got Y points, Wakko — W points. It was Dot's turn. But she didn't hurry. Dot wanted to know for sure what were her chances to visit Transylvania.
+
+It is known that Yakko and Wakko are true gentlemen, that's why if they have the same amount of points with Dot, they will let Dot win.
+
+Input
+The only line of the input file contains two natural numbers Y and W — the results of Yakko's and Wakko's die rolls.
+
+Output
+Output the required probability in the form of irreducible fraction in format «A/B», where A — the numerator, and B — the denominator. If the required probability equals to zero, output «0/1». If the required probability equals to 1, output «1/1».
+
+A. Medium Number
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given three distinct integers a
+, b
+, and c
+, find the medium number between all of them.
+
+The medium number is the number that is neither the minimum nor the maximum of the given three numbers.
+
+For example, the median of 5,2,6
+ is 5
+, since the minimum is 2
+ and the maximum is 6
+.
+
+Input
+The first line contains a single integer t
+ (1≤t≤6840
+) — the number of test cases.
+
+The description of each test case consists of three distinct integers a
+, b
+, c
+ (1≤a,b,c≤20
+).
+
+Output
+For each test case, output a single integer — the medium number of the three numbers.
+
+A. Football
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+One day Vasya decided to have a look at the results of Berland 1910 Football Championship’s finals. Unfortunately he didn't find the overall score of the match; however, he got hold of a profound description of the match's process. On the whole there are n lines in that description each of which described one goal. Every goal was marked with the name of the team that had scored it. Help Vasya, learn the name of the team that won the finals. It is guaranteed that the match did not end in a tie.
+
+Input
+The first line contains an integer n (1 ≤ n ≤ 100) — the number of lines in the description. Then follow n lines — for each goal the names of the teams that scored it. The names are non-empty lines consisting of uppercase Latin letters whose lengths do not exceed 10 symbols. It is guaranteed that the match did not end in a tie and the description contains no more than two different teams.
+
+Output
+Print the name of the winning team. We remind you that in football the team that scores more goals is considered the winner.
+
+Examples
+
+
+A. Required Remainder
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given three integers x,y
+ and n
+. Your task is to find the maximum integer k
+ such that 0≤k≤n
+ that kmodx=y
+, where mod
+ is modulo operation. Many programming languages use percent operator % to implement it.
+
+In other words, with given x,y
+ and n
+ you need to find the maximum possible integer from 0
+ to n
+ that has the remainder y
+ modulo x
+.
+
+You have to answer t
+ independent test cases. It is guaranteed that such k
+ exists for each test case.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤5⋅104
+) — the number of test cases. The next t
+ lines contain test cases.
+
+The only line of the test case contains three integers x,y
+ and n
+ (2≤x≤109; 0≤y<x; y≤n≤109
+).
+
+It can be shown that such k
+ always exists under the given constraints.
+
+Output
+For each test case, print the answer — maximum non-negative integer k
+ such that 0≤k≤n
+ and kmodx=y
+. It is guaranteed that the answer always exists.
+
+Example
+
+A. Black Square
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Quite recently, a very smart student named Jury decided that lectures are boring, so he downloaded a game called "Black Square" on his super cool touchscreen phone.
+
+In this game, the phone's screen is divided into four vertical strips. Each second, a black square appears on some of the strips. According to the rules of the game, Jury must use this second to touch the corresponding strip to make the square go away. As Jury is both smart and lazy, he counted that he wastes exactly ai calories on touching the i-th strip.
+
+You've got a string s, describing the process of the game and numbers a1, a2, a3, a4. Calculate how many calories Jury needs to destroy all the squares?
+
+Input
+The first line contains four space-separated integers a1, a2, a3, a4 (0 ≤ a1, a2, a3, a4 ≤ 104).
+
+The second line contains string s (1 ≤ |s| ≤ 105), where the і-th character of the string equals "1", if on the i-th second of the game the square appears on the first strip, "2", if it appears on the second strip, "3", if it appears on the third strip, "4", if it appears on the fourth strip.
+
+Output
+Print a single integer — the total number of calories that Jury wastes.
+
+A. New Year Transportation
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+New Year is coming in Line World! In this world, there are n cells numbered by integers from 1 to n, as a 1 × n board. People live in cells. However, it was hard to move between distinct cells, because of the difficulty of escaping the cell. People wanted to meet people who live in other cells.
+
+So, user tncks0121 has made a transportation system to move between these cells, to celebrate the New Year. First, he thought of n - 1 positive integers a1, a2, ..., an - 1. For every integer i where 1 ≤ i ≤ n - 1 the condition 1 ≤ ai ≤ n - i holds. Next, he made n - 1 portals, numbered by integers from 1 to n - 1. The i-th (1 ≤ i ≤ n - 1) portal connects cell i and cell (i + ai), and one can travel from cell i to cell (i + ai) using the i-th portal. Unfortunately, one cannot use the portal backwards, which means one cannot move from cell (i + ai) to cell i using the i-th portal. It is easy to see that because of condition 1 ≤ ai ≤ n - i one can't leave the Line World using portals.
+
+Currently, I am standing at cell 1, and I want to go to cell t. However, I don't know whether it is possible to go there. Please determine whether I can go to cell t by only using the construted transportation system.
+
+Input
+The first line contains two space-separated integers n (3 ≤ n ≤ 3 × 104) and t (2 ≤ t ≤ n) — the number of cells, and the index of the cell which I want to go to.
+
+The second line contains n - 1 space-separated integers a1, a2, ..., an - 1 (1 ≤ ai ≤ n - i). It is guaranteed, that using the given transportation system, one cannot leave the Line World.
+
+Output
+If I can go to cell t using the transportation system, print "YES". Otherwise, print "NO".
+
+B. Even Array
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given an array a[0…n−1]
+ of length n
+ which consists of non-negative integers. Note that array indices start from zero.
+
+An array is called good if the parity of each index matches the parity of the element at that index. More formally, an array is good if for all i
+ (0≤i≤n−1
+) the equality imod2=a[i]mod2
+ holds, where xmod2
+ is the remainder of dividing x
+ by 2.
+
+For example, the arrays [0,5,2,1
+] and [0,17,0,3
+] are good, and the array [2,4,6,7
+] is bad, because for i=1
+, the parities of i
+ and a[i]
+ are different: imod2=1mod2=1
+, but a[i]mod2=4mod2=0
+.
+
+In one move, you can take any two elements of the array and swap them (these elements are not necessarily adjacent).
+
+Find the minimum number of moves in which you can make the array a
+ good, or say that this is not possible.
+
+Input
+The first line contains a single integer t
+ (1≤t≤1000
+) — the number of test cases in the test. Then t
+ test cases follow.
+
+Each test case starts with a line containing an integer n
+ (1≤n≤40
+) — the length of the array a
+.
+
+The next line contains n
+ integers a0,a1,…,an−1
+ (0≤ai≤1000
+) — the initial array.
+
+Output
+For each test case, output a single integer — the minimum number of moves to make the given array a
+ good, or -1 if this is not possible.
+
+A. Do Not Be Distracted!
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Polycarp has 26
+ tasks. Each task is designated by a capital letter of the Latin alphabet.
+
+The teacher asked Polycarp to solve tasks in the following way: if Polycarp began to solve some task, then he must solve it to the end, without being distracted by another task. After switching to another task, Polycarp cannot return to the previous task.
+
+Polycarp can only solve one task during the day. Every day he wrote down what task he solved. Now the teacher wants to know if Polycarp followed his advice.
+
+For example, if Polycarp solved tasks in the following order: "DDBBCCCBBEZ", then the teacher will see that on the third day Polycarp began to solve the task 'B', then on the fifth day he got distracted and began to solve the task 'C', on the eighth day Polycarp returned to the task 'B'. Other examples of when the teacher is suspicious: "BAB", "AABBCCDDEEBZZ" and "AAAAZAAAAA".
+
+If Polycarp solved the tasks as follows: "FFGZZZY", then the teacher cannot have any suspicions. Please note that Polycarp is not obligated to solve all tasks. Other examples of when the teacher doesn't have any suspicious: "BA", "AFFFCC" and "YYYYY".
+
+Help Polycarp find out if his teacher might be suspicious.
+
+Input
+The first line contains an integer t
+ (1≤t≤1000
+). Then t
+ test cases follow.
+
+The first line of each test case contains one integer n
+ (1≤n≤50
+) — the number of days during which Polycarp solved tasks.
+
+The second line contains a string of length n
+, consisting of uppercase Latin letters, which is the order in which Polycarp solved the tasks.
+
+Output
+For each test case output:
+
+"YES", if the teacher cannot be suspicious;
+"NO", otherwise.
+You may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES are all recognized as positive answer).
+
+A. Plus One on the Subset
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Polycarp got an array of integers a[1…n]
+ as a gift. Now he wants to perform a certain number of operations (possibly zero) so that all elements of the array become the same (that is, to become a1=a2=⋯=an
+).
+
+In one operation, he can take some indices in the array and increase the elements of the array at those indices by 1
+.
+For example, let a=[4,2,1,6,2]
+. He can perform the following operation: select indices 1, 2, and 4 and increase elements of the array in those indices by 1
+. As a result, in one operation, he can get a new state of the array a=[5,3,1,7,2]
+.
+
+What is the minimum number of operations it can take so that all elements of the array become equal to each other (that is, to become a1=a2=⋯=an
+)?
+
+Input
+The first line of the input contains a single integer t
+ (1≤t≤104
+)  — the number of test cases in the test.
+
+The following are descriptions of the input test cases.
+
+The first line of the description of each test case contains one integer n
+ (1≤n≤50
+)  — the array a
+.
+
+The second line of the description of each test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤109
+)  — elements of the array a
+.
+
+Output
+For each test case, print one integer  — the minimum number of operations to make all elements of the array a
+ equal.
+
+A. Boring Apartments
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+There is a building consisting of 10 000
+ apartments numbered from 1
+ to 10 000
+, inclusive.
+
+Call an apartment boring, if its number consists of the same digit. Examples of boring apartments are 11,2,777,9999
+ and so on.
+
+Our character is a troublemaker, and he calls the intercoms of all boring apartments, till someone answers the call, in the following order:
+
+First he calls all apartments consisting of digit 1
+, in increasing order (1,11,111,1111
+).
+Next he calls all apartments consisting of digit 2
+, in increasing order (2,22,222,2222
+)
+And so on.
+The resident of the boring apartment x
+ answers the call, and our character stops calling anyone further.
+
+Our character wants to know how many digits he pressed in total and your task is to help him to count the total number of keypresses.
+
+For example, if the resident of boring apartment 22
+ answered, then our character called apartments with numbers 1,11,111,1111,2,22
+ and the total number of digits he pressed is 1+2+3+4+1+2=13
+.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤36
+) — the number of test cases.
+
+The only line of the test case contains one integer x
+ (1≤x≤9999
+) — the apartment number of the resident who answered the call. It is guaranteed that x
+ consists of the same digit.
+
+Output
+For each test case, print the answer: how many digits our character pressed in total.
+
+C. K-th Not Divisible by n
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given two positive integers n
+ and k
+. Print the k
+-th positive integer that is not divisible by n
+.
+
+For example, if n=3
+, and k=7
+, then all numbers that are not divisible by 3
+ are: 1,2,4,5,7,8,10,11,13…
+. The 7
+-th number among them is 10
+.
+
+Input
+The first line contains an integer t
+ (1≤t≤1000
+) — the number of test cases in the input. Next, t
+ test cases are given, one per line.
+
+Each test case is two positive integers n
+ (2≤n≤109
+) and k
+ (1≤k≤109
+).
+
+Output
+For each test case print the k
+-th positive integer that is not divisible by n
+.
+
+A. Maximum GCD
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Let's consider all integers in the range from 1
+ to n
+ (inclusive).
+
+Among all pairs of distinct integers in this range, find the maximum possible greatest common divisor of integers in pair. Formally, find the maximum value of gcd(a,b)
+, where 1≤a<b≤n
+.
+
+The greatest common divisor, gcd(a,b)
+, of two positive integers a
+ and b
+ is the biggest integer that is a divisor of both a
+ and b
+.
+
+Input
+The first line contains a single integer t
+ (1≤t≤100
+)  — the number of test cases. The description of the test cases follows.
+
+The only line of each test case contains a single integer n
+ (2≤n≤106
+).
+
+Output
+For each test case, output the maximum value of gcd(a,b)
+ among all 1≤a<b≤n
+.
+
+A. Panoramix's Prediction
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+A prime number is a number which has exactly two distinct divisors: one and itself. For example, numbers 2, 7, 3 are prime, and 1, 6, 4 are not.
+
+The next prime number after x is the smallest prime number greater than x. For example, the next prime number after 2 is 3, and the next prime number after 3 is 5. Note that there is exactly one next prime number after each number. So 5 is not the next prime number for 2.
+
+One cold April morning Panoramix predicted that soon Kakofonix will break free from his straitjacket, and this will be a black day for the residents of the Gallic countryside.
+
+Panoramix's prophecy tells that if some day Asterix and Obelix beat exactly x Roman soldiers, where x is a prime number, and next day they beat exactly y Roman soldiers, where y is the next prime number after x, then it's time to wait for Armageddon, for nothing can shut Kakofonix up while he sings his infernal song.
+
+Yesterday the Gauls beat n Roman soldiers and it turned out that the number n was prime! Today their victims were a troop of m Romans (m > n). Determine whether the Gauls should wait for the black day after today's victory of Asterix and Obelix?
+
+Input
+The first and only input line contains two positive integers — n and m (2 ≤ n < m ≤ 50). It is guaranteed that n is prime.
+
+Pretests contain all the cases with restrictions 2 ≤ n < m ≤ 4.
+
+Output
+Print YES, if m is the next prime number after n, or NO otherwise.
+
+B. Fence
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+There is a fence in front of Polycarpus's home. The fence consists of n planks of the same width which go one after another from left to right. The height of the i-th plank is hi meters, distinct planks can have distinct heights.
+
+Fence for n = 7 and h = [1, 2, 6, 1, 1, 7, 1]
+Polycarpus has bought a posh piano and is thinking about how to get it into the house. In order to carry out his plan, he needs to take exactly k consecutive planks from the fence. Higher planks are harder to tear off the fence, so Polycarpus wants to find such k consecutive planks that the sum of their heights is minimal possible.
+
+Write the program that finds the indexes of k consecutive planks with minimal total height. Pay attention, the fence is not around Polycarpus's home, it is in front of home (in other words, the fence isn't cyclic).
+
+Input
+The first line of the input contains integers n and k (1 ≤ n ≤ 1.5·105, 1 ≤ k ≤ n) — the number of planks in the fence and the width of the hole for the piano. The second line contains the sequence of integers h1, h2, ..., hn (1 ≤ hi ≤ 100), where hi is the height of the i-th plank of the fence.
+
+Output
+Print such integer j that the sum of the heights of planks j, j + 1, ..., j + k - 1 is the minimum possible. If there are multiple such j's, print any of them.
+
+A. Minimal Square
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Find the minimum area of a square land on which you can place two identical rectangular a×b
+ houses. The sides of the houses should be parallel to the sides of the desired square land.
+
+Formally,
+
+You are given two identical rectangles with side lengths a
+ and b
+ (1≤a,b≤100
+) — positive integers (you are given just the sizes, but not their positions).
+Find the square of the minimum area that contains both given rectangles. Rectangles can be rotated (both or just one), moved, but the sides of the rectangles should be parallel to the sides of the desired square.
+Two rectangles can touch each other (side or corner), but cannot intersect. Rectangles can also touch the sides of the square but must be completely inside it. You can rotate the rectangles. Take a look at the examples for a better understanding.
+
+The picture shows a square that contains red and green rectangles.
+Input
+The first line contains an integer t
+ (1≤t≤10000
+) —the number of test cases in the input. Then t
+ test cases follow.
+
+Each test case is a line containing two integers a
+, b
+ (1≤a,b≤100
+) — side lengths of the rectangles.
+
+Output
+Print t
+ answers to the test cases. Each answer must be a single integer — minimal area of square land, that contains two rectangles with dimensions a×b
+.
+
+A. Polycarp and Coins
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Polycarp must pay exactly n
+ burles at the checkout. He has coins of two nominal values: 1
+ burle and 2
+ burles. Polycarp likes both kinds of coins equally. So he doesn't want to pay with more coins of one type than with the other.
+
+Thus, Polycarp wants to minimize the difference between the count of coins of 1
+ burle and 2
+ burles being used. Help him by determining two non-negative integer values c1
+ and c2
+ which are the number of coins of 1
+ burle and 2
+ burles, respectively, so that the total value of that number of coins is exactly n
+ (i. e. c1+2⋅c2=n
+), and the absolute value of the difference between c1
+ and c2
+ is as little as possible (i. e. you must minimize |c1−c2|
+).
+
+Input
+The first line contains one integer t
+ (1≤t≤104
+) — the number of test cases. Then t
+ test cases follow.
+
+Each test case consists of one line. This line contains one integer n
+ (1≤n≤109
+) — the number of burles to be paid by Polycarp.
+
+Output
+For each test case, output a separate line containing two integers c1
+ and c2
+ (c1,c2≥0
+) separated by a space where c1
+ is the number of coins of 1
+ burle and c2
+ is the number of coins of 2
+ burles. If there are multiple optimal solutions, print any one.
+
+B. Two Arrays And Swaps
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given two arrays a
+ and b
+ both consisting of n
+ positive (greater than zero) integers. You are also given an integer k
+.
+
+In one move, you can choose two indices i
+ and j
+ (1≤i,j≤n
+) and swap ai
+ and bj
+ (i.e. ai
+ becomes bj
+ and vice versa). Note that i
+ and j
+ can be equal or different (in particular, swap a2
+ with b2
+ or swap a3
+ and b9
+ both are acceptable moves).
+
+Your task is to find the maximum possible sum you can obtain in the array a
+ if you can do no more than (i.e. at most) k
+ such moves (swaps).
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤200
+) — the number of test cases. Then t
+ test cases follow.
+
+The first line of the test case contains two integers n
+ and k
+ (1≤n≤30;0≤k≤n
+) — the number of elements in a
+ and b
+ and the maximum number of moves you can do. The second line of the test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤30
+), where ai
+ is the i
+-th element of a
+. The third line of the test case contains n
+ integers b1,b2,…,bn
+ (1≤bi≤30
+), where bi
+ is the i
+-th element of b
+.
+
+Output
+For each test case, print the answer — the maximum possible sum you can obtain in the array a
+ if you can do no more than (i.e. at most) k
+ swaps.
+
+A. Square String?
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+A string is called square if it is some string written twice in a row. For example, the strings "aa", "abcabc", "abab" and "baabaa" are square. But the strings "aaa", "abaaab" and "abcdabc" are not square.
+
+For a given string s
+ determine if it is square.
+
+Input
+The first line of input data contains an integer t
+ (1≤t≤100
+) —the number of test cases.
+
+This is followed by t
+ lines, each containing a description of one test case. The given strings consist only of lowercase Latin letters and have lengths between 1
+ and 100
+ inclusive.
+
+Output
+For each test case, output on a separate line:
+
+YES if the string in the corresponding test case is square,
+NO otherwise.
+You can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).
+
+B. Two Buttons
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vasya has found a strange device. On the front panel of a device there are: a red button, a blue button and a display showing some positive integer. After clicking the red button, device multiplies the displayed number by two. After clicking the blue button, device subtracts one from the number on the display. If at some point the number stops being positive, the device breaks down. The display can show arbitrarily large numbers. Initially, the display shows number n.
+
+Bob wants to get number m on the display. What minimum number of clicks he has to make in order to achieve this result?
+
+Input
+The first and the only line of the input contains two distinct integers n and m (1 ≤ n, m ≤ 104), separated by a space .
+
+Output
+Print a single number — the minimum number of times one needs to push the button required to get the number m out of number n.
+
+Examples
+inputCopy
+4 6
+outputCopy
+2
+inputCopy
+10 1
+outputCopy
+9
+Note
+In the first example you need to push the blue button once, and then push the red button once.
+
+In the second example, doubling the number is unnecessary, so we need to push the blue button nine times.
+
+B. Sale
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Once Bob got to a sale of old TV sets. There were n TV sets at that sale. TV set with index i costs ai bellars. Some TV sets have a negative price — their owners are ready to pay Bob if he buys their useless apparatus. Bob can «buy» any TV sets he wants. Though he's very strong, Bob can carry at most m TV sets, and he has no desire to go to the sale for the second time. Please, help Bob find out the maximum sum of money that he can earn.
+
+Input
+The first line contains two space-separated integers n and m (1 ≤ m ≤ n ≤ 100) — amount of TV sets at the sale, and amount of TV sets that Bob can carry. The following line contains n space-separated integers ai ( - 1000 ≤ ai ≤ 1000) — prices of the TV sets.
+
+Output
+Output the only number — the maximum sum of money that Bob can earn, given that he can carry at most m TV sets.
+
+B. Fair Division
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Alice and Bob received n
+ candies from their parents. Each candy weighs either 1 gram or 2 grams. Now they want to divide all candies among themselves fairly so that the total weight of Alice's candies is equal to the total weight of Bob's candies.
+
+Check if they can do that.
+
+Note that candies are not allowed to be cut in half.
+
+Input
+The first line contains one integer t
+ (1≤t≤104
+) — the number of test cases. Then t
+ test cases follow.
+
+The first line of each test case contains an integer n
+ (1≤n≤100
+) — the number of candies that Alice and Bob received.
+
+The next line contains n
+ integers a1,a2,…,an
+ — the weights of the candies. The weight of each candy is either 1
+ or 2
+.
+
+It is guaranteed that the sum of n
+ over all test cases does not exceed 105
+.
+
+Output
+For each test case, output on a separate line:
+
+"YES", if all candies can be divided into two sets with the same weight;
+"NO" otherwise.
+You can output "YES" and "NO" in any case (for example, the strings yEs, yes, Yes and YES will be recognized as positive).
+
+A. To My Critics
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Suneet has three digits a
+, b
+, and c
+.
+
+Since math isn't his strongest point, he asks you to determine if you can choose any two digits to make a sum greater or equal to 10
+.
+
+Output "YES" if there is such a pair, and "NO" otherwise.
+
+Input
+The first line contains a single integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+The only line of each test case contains three digits a
+, b
+, c
+ (0≤a,b,c≤9
+).
+
+Output
+For each test case, output "YES" if such a pair exists, and "NO" otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+A. Candies
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Recently Vova found n
+ candy wrappers. He remembers that he bought x
+ candies during the first day, 2x
+ candies during the second day, 4x
+ candies during the third day, …
+, 2k−1x
+ candies during the k
+-th day. But there is an issue: Vova remembers neither x
+ nor k
+ but he is sure that x
+ and k
+ are positive integers and k>1
+.
+
+Vova will be satisfied if you tell him any positive integer x
+ so there is an integer k>1
+ that x+2x+4x+⋯+2k−1x=n
+. It is guaranteed that at least one solution exists. Note that k>1
+.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤104
+) — the number of test cases. Then t
+ test cases follow.
+
+The only line of the test case contains one integer n
+ (3≤n≤109
+) — the number of candy wrappers Vova found. It is guaranteed that there is some positive integer x
+ and integer k>1
+ that x+2x+4x+⋯+2k−1x=n
+.
+
+Output
+Print one integer — any positive integer value of x
+ so there is an integer k>1
+ that x+2x+4x+⋯+2k−1x=n
+.
+
+A. Bachgold Problem
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Bachgold problem is very easy to formulate. Given a positive integer n represent it as a sum of maximum possible number of prime numbers. One can prove that such representation exists for any integer greater than 1.
+
+Recall that integer k is called prime if it is greater than 1 and has exactly two positive integer divisors — 1 and k.
+
+Input
+The only line of the input contains a single integer n (2 ≤ n ≤ 100 000).
+
+Output
+The first line of the output contains a single integer k — maximum possible number of primes in representation.
+
+The second line should contain k primes with their sum equal to n. You can print them in any order. If there are several optimal solution, print any of them.
+
+B. BerSU Ball
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+The Berland State University is hosting a ballroom dance in celebration of its 100500-th anniversary! n boys and m girls are already busy rehearsing waltz, minuet, polonaise and quadrille moves.
+
+We know that several boy&girl pairs are going to be invited to the ball. However, the partners' dancing skill in each pair must differ by at most one.
+
+For each boy, we know his dancing skills. Similarly, for each girl we know her dancing skills. Write a code that can determine the largest possible number of pairs that can be formed from n boys and m girls.
+
+Input
+The first line contains an integer n (1 ≤ n ≤ 100) — the number of boys. The second line contains sequence a1, a2, ..., an (1 ≤ ai ≤ 100), where ai is the i-th boy's dancing skill.
+
+Similarly, the third line contains an integer m (1 ≤ m ≤ 100) — the number of girls. The fourth line contains sequence b1, b2, ..., bm (1 ≤ bj ≤ 100), where bj is the j-th girl's dancing skill.
+
+Output
+Print a single number — the required maximum possible number of pairs.
+
+B. Books
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+When Valera has got some free time, he goes to the library to read some books. Today he's got t free minutes to read. That's why Valera took n books in the library and for each book he estimated the time he is going to need to read it. Let's number the books by integers from 1 to n. Valera needs ai minutes to read the i-th book.
+
+Valera decided to choose an arbitrary book with number i and read the books one by one, starting from this book. In other words, he will first read book number i, then book number i + 1, then book number i + 2 and so on. He continues the process until he either runs out of the free time or finishes reading the n-th book. Valera reads each book up to the end, that is, he doesn't start reading the book if he doesn't have enough free time to finish reading it.
+
+Print the maximum number of books Valera can read.
+
+Input
+The first line contains two integers n and t (1 ≤ n ≤ 105; 1 ≤ t ≤ 109) — the number of books and the number of free minutes Valera's got. The second line contains a sequence of n integers a1, a2, ..., an (1 ≤ ai ≤ 104), where number ai shows the number of minutes that the boy needs to read the i-th book.
+
+Output
+Print a single integer — the maximum number of books Valera can read.
+
+B. New Year's Number
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Polycarp remembered the 2020
+-th year, and he is happy with the arrival of the new 2021
+-th year. To remember such a wonderful moment, Polycarp wants to represent the number n
+ as the sum of a certain number of 2020
+ and a certain number of 2021
+.
+
+For example, if:
+
+n=4041
+, then the number n
+ can be represented as the sum 2020+2021
+;
+n=4042
+, then the number n
+ can be represented as the sum 2021+2021
+;
+n=8081
+, then the number n
+ can be represented as the sum 2020+2020+2020+2021
+;
+n=8079
+, then the number n
+ cannot be represented as the sum of the numbers 2020
+ and 2021
+.
+Help Polycarp to find out whether the number n
+ can be represented as the sum of a certain number of numbers 2020
+ and a certain number of numbers 2021
+.
+
+Input
+The first line contains one integer t
+ (1≤t≤104
+) — the number of test cases. Then t
+ test cases follow.
+
+Each test case contains one integer n
+ (1≤n≤106
+) — the number that Polycarp wants to represent as the sum of the numbers 2020
+ and 2021
+.
+
+Output
+For each test case, output on a separate line:
+
+"YES" if the number n
+ is representable as the sum of a certain number of 2020
+ and a certain number of 2021
+;
+"NO" otherwise.
+You can output "YES" and "NO" in any case (for example, the strings yEs, yes, Yes and YES will be recognized as positive).
+
+B. Honest Coach
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+There are n
+ athletes in front of you. Athletes are numbered from 1
+ to n
+ from left to right. You know the strength of each athlete — the athlete number i
+ has the strength si
+.
+
+You want to split all athletes into two teams. Each team must have at least one athlete, and each athlete must be exactly in one team.
+
+You want the strongest athlete from the first team to differ as little as possible from the weakest athlete from the second team. Formally, you want to split the athletes into two teams A
+ and B
+ so that the value |max(A)−min(B)|
+ is as small as possible, where max(A)
+ is the maximum strength of an athlete from team A
+, and min(B)
+ is the minimum strength of an athlete from team B
+.
+
+For example, if n=5
+ and the strength of the athletes is s=[3,1,2,6,4]
+, then one of the possible split into teams is:
+
+first team: A=[1,2,4]
+,
+second team: B=[3,6]
+.
+In this case, the value |max(A)−min(B)|
+ will be equal to |4−3|=1
+. This example illustrates one of the ways of optimal split into two teams.
+
+Print the minimum value |max(A)−min(B)|
+.
+
+Input
+The first line contains an integer t
+ (1≤t≤1000
+) — the number of test cases in the input. Then t
+ test cases follow.
+
+Each test case consists of two lines.
+
+The first line contains positive integer n
+ (2≤n≤50
+) — number of athletes.
+
+The second line contains n
+ positive integers s1,s2,…,sn
+ (1≤si≤1000
+), where si
+ — is the strength of the i
+-th athlete. Please note that s
+ values may not be distinct.
+
+Output
+For each test case print one integer — the minimum value of |max(A)−min(B)|
+ with the optimal split of all athletes into two teams. Each of the athletes must be a member of exactly one of the two teams.
+
+A. Vanya and Cubes
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vanya got n cubes. He decided to build a pyramid from them. Vanya wants to build the pyramid as follows: the top level of the pyramid must consist of 1 cube, the second level must consist of 1 + 2 = 3 cubes, the third level must have 1 + 2 + 3 = 6 cubes, and so on. Thus, the i-th level of the pyramid must have 1 + 2 + ... + (i - 1) + i cubes.
+
+Vanya wants to know what is the maximum height of the pyramid that he can make using the given cubes.
+
+Input
+The first line contains integer n (1 ≤ n ≤ 104) — the number of cubes given to Vanya.
+
+Output
+Print the maximum possible height of the pyramid in the single line.
+
+A. Fair Playoff
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Four players participate in the playoff tournament. The tournament is held according to the following scheme: the first player will play with the second, and the third player with the fourth, then the winners of the pairs will play in the finals of the tournament.
+
+It is known that in a match between two players, the one whose skill is greater will win. The skill of the i
+-th player is equal to si
+ and all skill levels are pairwise different (i. e. there are no two identical values in the array s
+).
+
+The tournament is called fair if the two players with the highest skills meet in the finals.
+
+Determine whether the given tournament is fair.
+
+Input
+The first line contains a single integer t
+ (1≤t≤104
+) — the number of test cases.
+
+A single line of test case contains four integers s1,s2,s3,s4
+ (1≤si≤100
+) — skill of the players. It is guaranteed that all the numbers in the array are different.
+
+Output
+For each testcase, output YES if the tournament is fair, or NO otherwise.
+
+A. Minutes Before the New Year
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+New Year is coming and you are excited to know how many minutes remain before the New Year. You know that currently the clock shows h
+ hours and m
+ minutes, where 0≤hh<24
+ and 0≤mm<60
+. We use 24-hour time format!
+
+Your task is to find the number of minutes before the New Year. You know that New Year comes when the clock shows 0
+ hours and 0
+ minutes.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤1439
+) — the number of test cases.
+
+The following t
+ lines describe test cases. The i
+-th line contains the time as two integers h
+ and m
+ (0≤h<24
+, 0≤m<60
+). It is guaranteed that this time is not a midnight, i.e. the following two conditions can't be met at the same time: h=0
+ and m=0
+. It is guaranteed that both h
+ and m
+ are given without leading zeros.
+
+Output
+For each test case, print the answer on it — the number of minutes before the New Year.
+
+Example
+
+A. Brain's Photos
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Small, but very brave, mouse Brain was not accepted to summer school of young villains. He was upset and decided to postpone his plans of taking over the world, but to become a photographer instead.
+
+As you may know, the coolest photos are on the film (because you can specify the hashtag #film for such).
+
+Brain took a lot of colourful pictures on colored and black-and-white film. Then he developed and translated it into a digital form. But now, color and black-and-white photos are in one folder, and to sort them, one needs to spend more than one hour!
+
+As soon as Brain is a photographer not programmer now, he asks you to help him determine for a single photo whether it is colored or black-and-white.
+
+Photo can be represented as a matrix sized n × m, and each element of the matrix stores a symbol indicating corresponding pixel color. There are only 6 colors:
+
+'C' (cyan)
+'M' (magenta)
+'Y' (yellow)
+'W' (white)
+'G' (grey)
+'B' (black)
+The photo is considered black-and-white if it has only white, black and grey pixels in it. If there are any of cyan, magenta or yellow pixels in the photo then it is considered colored.
+
+Input
+The first line of the input contains two integers n and m (1 ≤ n, m ≤ 100) — the number of photo pixel matrix rows and columns respectively.
+
+Then n lines describing matrix rows follow. Each of them contains m space-separated characters describing colors of pixels in a row. Each character in the line is one of the 'C', 'M', 'Y', 'W', 'G' or 'B'.
+
+Output
+Print the "#Black&White" (without quotes), if the photo is black-and-white and "#Color" (without quotes), if it is colored, in the only line.
+
+A. Spell Check
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Timur likes his name. As a spelling of his name, he allows any permutation of the letters of the name. For example, the following strings are valid spellings of his name: Timur, miurT, Trumi, mriTu. Note that the correct spelling must have uppercased T and lowercased other letters.
+
+Today he wrote string s
+ of length n
+ consisting only of uppercase or lowercase Latin letters. He asks you to check if s
+ is the correct spelling of his name.
+
+Input
+The first line of the input contains an integer t
+ (1≤t≤103
+) — the number of test cases.
+
+The first line of each test case contains an integer n
+ (1≤n≤10)
+ — the length of string s
+.
+
+The second line of each test case contains a string s
+ consisting of only uppercase or lowercase Latin characters.
+
+Output
+For each test case, output "YES" (without quotes) if s
+ satisfies the condition, and "NO" (without quotes) otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+A. New Year Candles
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vasily the Programmer loves romance, so this year he decided to illuminate his room with candles.
+
+Vasily has a candles.When Vasily lights up a new candle, it first burns for an hour and then it goes out. Vasily is smart, so he can make b went out candles into a new candle. As a result, this new candle can be used like any other new candle.
+
+Now Vasily wonders: for how many hours can his candles light up the room if he acts optimally well? Help him find this number.
+
+Input
+The single line contains two integers, a and b (1 ≤ a ≤ 1000; 2 ≤ b ≤ 1000).
+
+Output
+Print a single integer — the number of hours Vasily can light up the room for.
+
+A. Floor Number
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vasya goes to visit his classmate Petya. Vasya knows that Petya's apartment number is n
+.
+
+There is only one entrance in Petya's house and the distribution of apartments is the following: the first floor contains 2
+ apartments, every other floor contains x
+ apartments each. Apartments are numbered starting from one, from the first floor. I.e. apartments on the first floor have numbers 1
+ and 2
+, apartments on the second floor have numbers from 3
+ to (x+2)
+, apartments on the third floor have numbers from (x+3)
+ to (2⋅x+2)
+, and so on.
+
+Your task is to find the number of floor on which Petya lives. Assume that the house is always high enough to fit at least n
+ apartments.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤1000
+) — the number of test cases. Then t
+ test cases follow.
+
+The only line of the test case contains two integers n
+ and x
+ (1≤n,x≤1000
+) — the number of Petya's apartment and the number of apartments on each floor of the house except the first one (there are two apartments on the first floor).
+
+Output
+For each test case, print the answer: the number of floor on which Petya lives.
+
+Example
+
+A. Laptops
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+One day Dima and Alex had an argument about the price and quality of laptops. Dima thinks that the more expensive a laptop is, the better it is. Alex disagrees. Alex thinks that there are two laptops, such that the price of the first laptop is less (strictly smaller) than the price of the second laptop but the quality of the first laptop is higher (strictly greater) than the quality of the second laptop.
+
+Please, check the guess of Alex. You are given descriptions of n laptops. Determine whether two described above laptops exist.
+
+Input
+The first line contains an integer n (1 ≤ n ≤ 105) — the number of laptops.
+
+Next n lines contain two integers each, ai and bi (1 ≤ ai, bi ≤ n), where ai is the price of the i-th laptop, and bi is the number that represents the quality of the i-th laptop (the larger the number is, the higher is the quality).
+
+All ai are distinct. All bi are distinct.
+
+Output
+If Alex is correct, print "Happy Alex", otherwise print "Poor Alex" (without the quotes).
+
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given an integer n
+. In one move, you can either multiply n
+ by two or divide n
+ by 6
+ (if it is divisible by 6
+ without the remainder).
+
+Your task is to find the minimum number of moves needed to obtain 1
+ from n
+ or determine if it's impossible to do that.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤2⋅104
+) — the number of test cases. Then t
+ test cases follow.
+
+The only line of the test case contains one integer n
+ (1≤n≤109
+).
+
+Output
+For each test case, print the answer — the minimum number of moves needed to obtain 1
+ from n
+ if it's possible to do that or -1 if it's impossible to obtain 1
+ from n
+.
+
+C. Given Length and Sum of Digits...
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You have a positive integer m and a non-negative integer s. Your task is to find the smallest and the largest of the numbers that have length m and sum of digits s. The required numbers should be non-negative integers written in the decimal base without leading zeroes.
+
+Input
+The single line of the input contains a pair of integers m, s (1 ≤ m ≤ 100, 0 ≤ s ≤ 900) — the length and the sum of the digits of the required numbers.
+
+Output
+In the output print the pair of the required non-negative integer numbers — first the minimum possible number, then — the maximum possible number. If no numbers satisfying conditions required exist, print the pair of numbers "-1 -1" (without the quotes).
+
+Examples
+
+A. New Year Candles
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vasily the Programmer loves romance, so this year he decided to illuminate his room with candles.
+
+Vasily has a candles.When Vasily lights up a new candle, it first burns for an hour and then it goes out. Vasily is smart, so he can make b went out candles into a new candle. As a result, this new candle can be used like any other new candle.
+
+Now Vasily wonders: for how many hours can his candles light up the room if he acts optimally well? Help him find this number.
+
+Input
+The single line contains two integers, a and b (1 ≤ a ≤ 1000; 2 ≤ b ≤ 1000).
+
+Output
+Print a single integer — the number of hours Vasily can light up the room for.
+
+A. Magical Sticks
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+A penguin Rocher has n
+ sticks. He has exactly one stick with length i
+ for all 1≤i≤n
+.
+
+He can connect some sticks. If he connects two sticks that have lengths a
+ and b
+, he gets one stick with length a+b
+. Two sticks, that were used in the operation disappear from his set and the new connected stick appears in his set and can be used for the next connections.
+
+He wants to create the maximum number of sticks that have the same length. It is not necessary to make all sticks have the same length, some sticks can have the other length. How many sticks with the equal length he can create?
+
+Input
+The input consists of multiple test cases. The first line contains a single integer t
+ (1≤t≤1000
+) — the number of test cases. Next t
+ lines contain descriptions of test cases.
+
+For each test case, the only line contains a single integer n
+ (1≤n≤109
+).
+
+Output
+For each test case, print a single integer  — the answer to the problem.
+
+A. Vasya and Socks
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vasya has n pairs of socks. In the morning of each day Vasya has to put on a pair of socks before he goes to school. When he comes home in the evening, Vasya takes off the used socks and throws them away. Every m-th day (at days with numbers m, 2m, 3m, ...) mom buys a pair of socks to Vasya. She does it late in the evening, so that Vasya cannot put on a new pair of socks before the next day. How many consecutive days pass until Vasya runs out of socks?
+
+Input
+The single line contains two integers n and m (1 ≤ n ≤ 100; 2 ≤ m ≤ 100), separated by a space.
+
+Output
+Print a single integer — the answer to the problem.
+
+Examples
+
+A. Short Sort
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+There are three cards with letters a
+, b
+, c
+ placed in a row in some order. You can do the following operation at most once:
+
+Pick two cards, and swap them.
+Is it possible that the row becomes abc
+ after the operation? Output "YES" if it is possible, and "NO" otherwise.
+Input
+The first line contains a single integer t
+ (1≤t≤6
+) — the number of test cases.
+
+The only line of each test case contains a single string consisting of each of the three characters a
+, b
+, and c
+ exactly once, representing the cards.
+
+Output
+For each test case, output "YES" if you can make the row abc
+ with at most one operation, or "NO" otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+A. Collecting Coins
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Polycarp has three sisters: Alice, Barbara, and Cerene. They're collecting coins. Currently, Alice has a
+ coins, Barbara has b
+ coins and Cerene has c
+ coins. Recently Polycarp has returned from the trip around the world and brought n
+ coins.
+
+He wants to distribute all these n
+ coins between his sisters in such a way that the number of coins Alice has is equal to the number of coins Barbara has and is equal to the number of coins Cerene has. In other words, if Polycarp gives A
+ coins to Alice, B
+ coins to Barbara and C
+ coins to Cerene (A+B+C=n
+), then a+A=b+B=c+C
+.
+
+Note that A, B or C (the number of coins Polycarp gives to Alice, Barbara and Cerene correspondingly) can be 0.
+
+Your task is to find out if it is possible to distribute all n
+ coins between sisters in a way described above.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤104
+) — the number of test cases.
+
+The next t
+ lines describe test cases. Each test case is given on a new line and consists of four space-separated integers a,b,c
+ and n
+ (1≤a,b,c,n≤108
+) — the number of coins Alice has, the number of coins Barbara has, the number of coins Cerene has and the number of coins Polycarp has.
+
+Output
+For each test case, print "YES" if Polycarp can distribute all n
+ coins between his sisters and "NO" otherwise.
+
+B. ICPC Balloons
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+In an ICPC contest, balloons are distributed as follows:
+
+Whenever a team solves a problem, that team gets a balloon.
+The first team to solve a problem gets an additional balloon.
+A contest has 26 problems, labelled A
+, B
+, C
+, ..., Z
+. You are given the order of solved problems in the contest, denoted as a string s
+, where the i
+-th character indicates that the problem si
+ has been solved by some team. No team will solve the same problem twice.
+Determine the total number of balloons that the teams received. Note that some problems may be solved by none of the teams.
+
+Input
+The first line of the input contains an integer t
+ (1≤t≤100
+) — the number of testcases.
+
+The first line of each test case contains an integer n
+ (1≤n≤50
+) — the length of the string.
+
+The second line of each test case contains a string s
+ of length n
+ consisting of uppercase English letters, denoting the order of solved problems.
+
+Output
+For each test case, output a single integer — the total number of balloons that the teams received.
+
+B. Equal Candies
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+There are n
+ boxes with different quantities of candies in each of them. The i
+-th box has ai
+ candies inside.
+
+You also have n
+ friends that you want to give the candies to, so you decided to give each friend a box of candies. But, you don't want any friends to get upset so you decided to eat some (possibly none) candies from each box so that all boxes have the same quantity of candies in them. Note that you may eat a different number of candies from different boxes and you cannot add candies to any of the boxes.
+
+What's the minimum total number of candies you have to eat to satisfy the requirements?
+
+Input
+The first line contains an integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+The first line of each test case contains an integer n
+ (1≤n≤50
+) — the number of boxes you have.
+
+The second line of each test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤107
+) — the quantity of candies in each box.
+
+Output
+For each test case, print a single integer denoting the minimum number of candies you have to eat to satisfy the requirements.
+
+A. Fancy Fence
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Emuskald needs a fence around his farm, but he is too lazy to build it himself. So he purchased a fence-building robot.
+
+He wants the fence to be a regular polygon. The robot builds the fence along a single path, but it can only make fence corners at a single angle a.
+
+Will the robot be able to build the fence Emuskald wants? In other words, is there a regular polygon which angles are equal to a?
+
+Input
+The first line of input contains an integer t (0 < t < 180) — the number of tests. Each of the following t lines contains a single integer a (0 < a < 180) — the angle the robot can make corners at measured in degrees.
+
+Output
+For each test, output on a single line "YES" (without quotes), if the robot can build a fence Emuskald wants, and "NO" (without quotes), if it is impossible.
+
+Examples
+
+B. Worms
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+It is lunch time for Mole. His friend, Marmot, prepared him a nice game for lunch.
+
+Marmot brought Mole n ordered piles of worms such that i-th pile contains ai worms. He labeled all these worms with consecutive integers: worms in first pile are labeled with numbers 1 to a1, worms in second pile are labeled with numbers a1 + 1 to a1 + a2 and so on. See the example for a better understanding.
+
+Mole can't eat all the worms (Marmot brought a lot) and, as we all know, Mole is blind, so Marmot tells him the labels of the best juicy worms. Marmot will only give Mole a worm if Mole says correctly in which pile this worm is contained.
+
+Poor Mole asks for your help. For all juicy worms said by Marmot, tell Mole the correct answers.
+
+Input
+The first line contains a single integer n (1 ≤ n ≤ 105), the number of piles.
+
+The second line contains n integers a1, a2, ..., an (1 ≤ ai ≤ 103, a1 + a2 + ... + an ≤ 106), where ai is the number of worms in the i-th pile.
+
+The third line contains single integer m (1 ≤ m ≤ 105), the number of juicy worms said by Marmot.
+
+The fourth line contains m integers q1, q2, ..., qm (1 ≤ qi ≤ a1 + a2 + ... + an), the labels of the juicy worms.
+
+Output
+Print m lines to the standard output. The i-th line should contain an integer, representing the number of the pile where the worm labeled with the number qi is.
+
+A. Chewbaсca and Number
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Luke Skywalker gave Chewbacca an integer number x. Chewbacca isn't good at numbers but he loves inverting digits in them. Inverting digit t means replacing it with digit 9 - t.
+
+Help Chewbacca to transform the initial number x to the minimum possible positive number by inverting some (possibly, zero) digits. The decimal representation of the final number shouldn't start with a zero.
+
+Input
+The first line contains a single integer x (1 ≤ x ≤ 1018) — the number that Luke Skywalker gave to Chewbacca.
+
+Output
+Print the minimum possible positive number that Chewbacca can obtain after inverting some digits. The number shouldn't contain leading zeroes.
+
+A. Mahmoud and Ehab and the even-odd game
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Mahmoud and Ehab play a game called the even-odd game. Ehab chooses his favorite integer n and then they take turns, starting from Mahmoud. In each player's turn, he has to choose an integer a and subtract it from n such that:
+
+1 ≤ a ≤ n.
+If it's Mahmoud's turn, a has to be even, but if it's Ehab's turn, a has to be odd.
+If the current player can't choose any number satisfying the conditions, he loses. Can you determine the winner if they both play optimally?
+
+Input
+The only line contains an integer n (1 ≤ n ≤ 109), the number at the beginning of the game.
+
+Output
+Output "Mahmoud" (without quotes) if Mahmoud wins and "Ehab" (without quotes) otherwise.
+
+B. Increasing
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given an array a
+ of n
+ positive integers. Determine if, by rearranging the elements, you can make the array strictly increasing. In other words, determine if it is possible to rearrange the elements such that a1<a2<⋯<an
+ holds.
+
+Input
+The first line contains a single integer t
+ (1≤t≤100
+) — the number of test cases.
+
+The first line of each test case contains a single integer n
+ (1≤n≤100
+) — the length of the array.
+
+The second line of each test case contains n
+ integers ai
+ (1≤ai≤109
+) — the elements of the array.
+
+Output
+For each test case, output "YES" (without quotes) if the array satisfies the condition, and "NO" (without quotes) otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+B. Gifts Fixing
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You have n
+ gifts and you want to give all of them to children. Of course, you don't want to offend anyone, so all gifts should be equal between each other. The i
+-th gift consists of ai
+ candies and bi
+ oranges.
+
+During one move, you can choose some gift 1≤i≤n
+ and do one of the following operations:
+
+eat exactly one candy from this gift (decrease ai
+ by one);
+eat exactly one orange from this gift (decrease bi
+ by one);
+eat exactly one candy and exactly one orange from this gift (decrease both ai
+ and bi
+ by one).
+Of course, you can not eat a candy or orange if it's not present in the gift (so neither ai
+ nor bi
+ can become less than zero).
+
+As said above, all gifts should be equal. This means that after some sequence of moves the following two conditions should be satisfied: a1=a2=⋯=an
+ and b1=b2=⋯=bn
+ (and ai
+ equals bi
+ is not necessary).
+
+Your task is to find the minimum number of moves required to equalize all the given gifts.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤1000
+) — the number of test cases. Then t
+ test cases follow.
+
+The first line of the test case contains one integer n
+ (1≤n≤50
+) — the number of gifts. The second line of the test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤109
+), where ai
+ is the number of candies in the i
+-th gift. The third line of the test case contains n
+ integers b1,b2,…,bn
+ (1≤bi≤109
+), where bi
+ is the number of oranges in the i
+-th gift.
+
+Output
+For each test case, print one integer: the minimum number of moves required to equalize all the given gifts.
+
+B. Ordinary Numbers
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Let's call a positive integer n
+ ordinary if in the decimal notation all its digits are the same. For example, 1
+, 2
+ and 99
+ are ordinary numbers, but 719
+ and 2021
+ are not ordinary numbers.
+
+For a given number n
+, find the number of ordinary numbers among the numbers from 1
+ to n
+.
+
+Input
+The first line contains one integer t
+ (1≤t≤104
+). Then t
+ test cases follow.
+
+Each test case is characterized by one integer n
+ (1≤n≤109
+).
+
+Output
+For each test case output the number of ordinary numbers among numbers from 1
+ to n
+.
+
+A. Night at the Museum
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Grigoriy, like the hero of one famous comedy film, found a job as a night security guard at the museum. At first night he received embosser and was to take stock of the whole exposition.
+
+Embosser is a special devise that allows to "print" the text of a plastic tape. Text is printed sequentially, character by character. The device consists of a wheel with a lowercase English letters written in a circle, static pointer to the current letter and a button that print the chosen letter. At one move it's allowed to rotate the alphabetic wheel one step clockwise or counterclockwise. Initially, static pointer points to letter 'a'. Other letters are located as shown on the picture:
+
+
+After Grigoriy add new item to the base he has to print its name on the plastic tape and attach it to the corresponding exhibit. It's not required to return the wheel to its initial position with pointer on the letter 'a'.
+
+Our hero is afraid that some exhibits may become alive and start to attack him, so he wants to print the names as fast as possible. Help him, for the given string find the minimum number of rotations of the wheel required to print it.
+
+Input
+The only line of input contains the name of some exhibit — the non-empty string consisting of no more than 100 characters. It's guaranteed that the string consists of only lowercase English letters.
+
+Output
+Print one integer — the minimum number of rotations of the wheel, required to print the name given in the input.
+
+B. Sort the Array
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Being a programmer, you like arrays a lot. For your birthday, your friends have given you an array a consisting of n distinct integers.
+
+Unfortunately, the size of a is too small. You want a bigger array! Your friends agree to give you a bigger array, but only if you are able to answer the following question correctly: is it possible to sort the array a (in increasing order) by reversing exactly one segment of a? See definitions of segment and reversing in the notes.
+
+Input
+The first line of the input contains an integer n (1 ≤ n ≤ 105) — the size of array a.
+
+The second line contains n distinct space-separated integers: a[1], a[2], ..., a[n] (1 ≤ a[i] ≤ 109).
+
+Output
+Print "yes" or "no" (without quotes), depending on the answer.
+
+If your answer is "yes", then also print two space-separated integers denoting start and end (start must not be greater than end) indices of the segment to be reversed. If there are multiple ways of selecting these indices, print any of them.
+
+A. Olesya and Rodion
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Olesya loves numbers consisting of n digits, and Rodion only likes numbers that are divisible by t. Find some number that satisfies both of them.
+
+Your task is: given the n and t print an integer strictly larger than zero consisting of n digits that is divisible by t. If such number doesn't exist, print  - 1.
+
+Input
+The single line contains two numbers, n and t (1 ≤ n ≤ 100, 2 ≤ t ≤ 10) — the length of the number and the number it should be divisible by.
+
+Output
+Print one such positive number without leading zeroes, — the answer to the problem, or  - 1, if such number doesn't exist. If there are multiple possible answers, you are allowed to print any of them.
+
+Examples
+
+A. A+B?
+time limit per test2 seconds
+memory limit per test512 megabytes
+inputstandard input
+outputstandard output
+You are given an expression of the form a+b
+, where a
+ and b
+ are integers from 0
+ to 9
+. You have to evaluate it and print the result.
+
+Input
+The first line contains one integer t
+ (1≤t≤100
+) — the number of test cases.
+
+Each test case consists of one line containing an expression of the form a+b
+ (0≤a,b≤9
+, both a
+ and b
+ are integers). The integers are not separated from the +
+ sign.
+
+Output
+For each test case, print one integer — the result of the expression.
+
+A. Love Story
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Timur loves codeforces. That's why he has a string s
+ having length 10
+ made containing only lowercase Latin letters. Timur wants to know how many indices string s
+ differs from the string "codeforces".
+
+For example string s=
+ "coolforsez" differs from "codeforces" in 4
+ indices, shown in bold.
+
+Help Timur by finding the number of indices where string s
+ differs from "codeforces".
+
+Note that you can't reorder the characters in the string s
+.
+
+Input
+The first line contains a single integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+Each test case is one line and contains the string s
+, consisting of exactly 10
+ lowercase Latin characters.
+
+Output
+For each test case, output a single integer — the number of indices where string s
+ differs.
+
+B. Colourblindness
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vasya has a grid with 2
+ rows and n
+ columns. He colours each cell red, green, or blue.
+
+Vasya is colourblind and can't distinguish green from blue. Determine if Vasya will consider the two rows of the grid to be coloured the same.
+
+Input
+The input consists of multiple test cases. The first line contains an integer t
+ (1≤t≤100
+) — the number of test cases. The description of the test cases follows.
+
+The first line of each test case contains an integer n
+ (1≤n≤100
+) — the number of columns of the grid.
+
+The following two lines each contain a string consisting of n
+ characters, each of which is either R, G, or B, representing a red, green, or blue cell, respectively — the description of the grid.
+
+Output
+For each test case, output "YES" if Vasya considers the grid's two rows to be identical, and "NO" otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+C. Move Brackets
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given a bracket sequence s
+ of length n
+, where n
+ is even (divisible by two). The string s
+ consists of n2
+ opening brackets '(' and n2
+ closing brackets ')'.
+
+In one move, you can choose exactly one bracket and move it to the beginning of the string or to the end of the string (i.e. you choose some index i
+, remove the i
+-th character of s
+ and insert it before or after all remaining characters of s
+).
+
+Your task is to find the minimum number of moves required to obtain regular bracket sequence from s
+. It can be proved that the answer always exists under the given constraints.
+
+Recall what the regular bracket sequence is:
+
+"()" is regular bracket sequence;
+if s
+ is regular bracket sequence then "(" + s
+ + ")" is regular bracket sequence;
+if s
+ and t
+ are regular bracket sequences then s
+ + t
+ is regular bracket sequence.
+For example, "()()", "(())()", "(())" and "()" are regular bracket sequences, but ")(", "()(" and ")))" are not.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤2000
+) — the number of test cases. Then t
+ test cases follow.
+
+The first line of the test case contains one integer n
+ (2≤n≤50
+) — the length of s
+. It is guaranteed that n
+ is even. The second line of the test case containg the string s
+ consisting of n2
+ opening and n2
+ closing brackets.
+
+Output
+For each test case, print the answer — the minimum number of moves required to obtain regular bracket sequence from s
+. It can be proved that the answer always exists under the given constraints.
+
+A. Keyboard
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Our good friend Mole is trying to code a big message. He is typing on an unusual keyboard with characters arranged in following way:
+
+
+qwertyuiop
+asdfghjkl;
+zxcvbnm,./
+Unfortunately Mole is blind, so sometimes it is problem for him to put his hands accurately. He accidentally moved both his hands with one position to the left or to the right. That means that now he presses not a button he wants, but one neighboring button (left or right, as specified in input).
+
+We have a sequence of characters he has typed and we want to find the original message.
+
+Input
+First line of the input contains one letter describing direction of shifting ('L' or 'R' respectively for left or right).
+
+Second line contains a sequence of characters written by Mole. The size of this sequence will be no more than 100. Sequence contains only symbols that appear on Mole's keyboard. It doesn't contain spaces as there is no space on Mole's keyboard.
+
+It is guaranteed that even though Mole hands are moved, he is still pressing buttons on keyboard and not hitting outside it.
+
+Output
+Print a line that contains the original message.
+A. Odd Set
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given a multiset (i. e. a set that can contain multiple equal integers) containing 2n
+ integers. Determine if you can split it into exactly n
+ pairs (i. e. each element should be in exactly one pair) so that the sum of the two elements in each pair is odd (i. e. when divided by 2
+, the remainder is 1
+).
+
+Input
+The input consists of multiple test cases. The first line contains an integer t
+ (1≤t≤100
+) — the number of test cases. The description of the test cases follows.
+
+The first line of each test case contains an integer n
+ (1≤n≤100
+).
+
+The second line of each test case contains 2n
+ integers a1,a2,…,a2n
+ (0≤ai≤100
+) — the numbers in the set.
+
+Output
+For each test case, print "Yes" if it can be split into exactly n
+ pairs so that the sum of the two elements in each pair is odd, and "No" otherwise. You can print each letter in any case.
+A. Fafa and his Company
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Fafa owns a company that works on huge projects. There are n employees in Fafa's company. Whenever the company has a new project to start working on, Fafa has to divide the tasks of this project among all the employees.
+
+Fafa finds doing this every time is very tiring for him. So, he decided to choose the best l employees in his company as team leaders. Whenever there is a new project, Fafa will divide the tasks among only the team leaders and each team leader will be responsible of some positive number of employees to give them the tasks. To make this process fair for the team leaders, each one of them should be responsible for the same number of employees. Moreover, every employee, who is not a team leader, has to be under the responsibility of exactly one team leader, and no team leader is responsible for another team leader.
+
+Given the number of employees n, find in how many ways Fafa could choose the number of team leaders l in such a way that it is possible to divide employees between them evenly.
+
+Input
+The input consists of a single line containing a positive integer n (2 ≤ n ≤ 105) — the number of employees in Fafa's company.
+
+Output
+Print a single integer representing the answer to the problem.
+
+A. Cards for Friends
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+For the New Year, Polycarp decided to send postcards to all his n
+ friends. He wants to make postcards with his own hands. For this purpose, he has a sheet of paper of size w×h
+, which can be cut into pieces.
+
+Polycarp can cut any sheet of paper w×h
+ that he has in only two cases:
+
+If w
+ is even, then he can cut the sheet in half and get two sheets of size w2×h
+;
+If h
+ is even, then he can cut the sheet in half and get two sheets of size w×h2
+;
+If w
+ and h
+ are even at the same time, then Polycarp can cut the sheet according to any of the rules above.
+
+After cutting a sheet of paper, the total number of sheets of paper is increased by 1
+.
+
+Help Polycarp to find out if he can cut his sheet of size w×h
+ at into n
+ or more pieces, using only the rules described above.
+
+Input
+The first line contains one integer t
+ (1≤t≤104
+) — the number of test cases. Then t
+ test cases follow.
+
+Each test case consists of one line containing three integers w
+, h
+, n
+ (1≤w,h≤104,1≤n≤109
+) — the width and height of the sheet Polycarp has and the number of friends he needs to send a postcard to.
+
+Output
+For each test case, output on a separate line:
+
+"YES", if it is possible to cut a sheet of size w×h
+ into at least n
+ pieces;
+"NO" otherwise.
+You can output "YES" and "NO" in any case (for example, the strings yEs, yes, Yes and YES will be recognized as positive).
+B. Following Directions
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Alperen is standing at the point (0,0)
+. He is given a string s
+ of length n
+ and performs n
+ moves. The i
+-th move is as follows:
+
+if si=L
+, then move one unit left;
+if si=R
+, then move one unit right;
+if si=U
+, then move one unit up;
+if si=D
+, then move one unit down.
+If Alperen starts at the center point, he can make the four moves shown.
+There is a candy at (1,1)
+ (that is, one unit above and one unit to the right of Alperen's starting point). You need to determine if Alperen ever passes the candy.
+Alperen's path in the first test case.
+Input
+The first line of the input contains an integer t
+ (1≤t≤1000
+) — the number of testcases.
+
+The first line of each test case contains an integer n
+ (1≤n≤50
+) — the length of the string.
+
+The second line of each test case contains a string s
+ of length n
+ consisting of characters L
+, R
+, D
+, and U
+, denoting the moves Alperen makes.
+
+Output
+For each test case, output "YES" (without quotes) if Alperen passes the candy, and "NO" (without quotes) otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+Example
+A. Add Odd or Subtract Even
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given two positive integers a
+ and b
+.
+
+In one move, you can change a
+ in the following way:
+
+Choose any positive odd integer x
+ (x>0
+) and replace a
+ with a+x
+;
+choose any positive even integer y
+ (y>0
+) and replace a
+ with a−y
+.
+You can perform as many such operations as you want. You can choose the same numbers x
+ and y
+ in different moves.
+
+Your task is to find the minimum number of moves required to obtain b
+ from a
+. It is guaranteed that you can always obtain b
+ from a
+.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤104
+) — the number of test cases.
+
+Then t
+ test cases follow. Each test case is given as two space-separated integers a
+ and b
+ (1≤a,b≤109
+).
+
+Output
+For each test case, print the answer — the minimum number of moves required to obtain b
+ from a
+ if you can perform any number of moves described in the problem statement. It is guaranteed that you can always obtain b
+ from a
+.
+
+Example
+input
+
+B. Good Kid
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Slavic is preparing a present for a friend's birthday. He has an array a
+ of n
+ digits and the present will be the product of all these digits. Because Slavic is a good kid who wants to make the biggest product possible, he wants to add 1
+ to exactly one of his digits.
+
+What is the maximum product Slavic can make?
+
+Input
+The first line contains a single integer t
+ (1≤t≤104
+) — the number of test cases.
+
+The first line of each test case contains a single integer n
+ (1≤n≤9
+) — the number of digits.
+
+The second line of each test case contains n
+ space-separated integers ai
+ (0≤ai≤9
+) — the digits in the array.
+
+Output
+For each test case, output a single integer — the maximum product Slavic can make, by adding 1
+ to exactly one of his digits.
+
+A. Array Coloring
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given an array consisting of n
+ integers. Your task is to determine whether it is possible to color all its elements in two colors in such a way that the sums of the elements of both colors have the same parity and each color has at least one element colored.
+
+For example, if the array is [1,2,4,3,2,3,5,4
+], we can color it as follows: [1,2,4,3,2,3,5,4
+], where the sum of the blue elements is 6
+ and the sum of the red elements is 18
+.
+
+Input
+The first line contains an integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+Each test case begins with a line containing an integer n
+ (2≤n≤50
+) — the length of the array a
+.
+
+The next line contains n
+ integers a1,a2,…,an
+ (1≤ai≤50
+) — the elements of the array a
+.
+
+Output
+For each test case, output "YES" (without quotes) if it is possible to color the array in two colors in such a way that the sums of the elements of both colors have the same parity and each color has at least one element colored, and "NO" otherwise.
+
+You can output "Yes" and "No" in any case (for example, the strings "yES", "yes", and "Yes" will be recognized as correct answers).
+
+Example
+
+B. Ilya and Queries
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Ilya the Lion wants to help all his friends with passing exams. They need to solve the following problem to pass the IT exam.
+
+You've got string s = s1s2... sn (n is the length of the string), consisting only of characters "." and "#" and m queries. Each query is described by a pair of integers li, ri (1 ≤ li < ri ≤ n). The answer to the query li, ri is the number of such integers i (li ≤ i < ri), that si = si + 1.
+
+Ilya the Lion wants to help his friends but is there anyone to help him? Help Ilya, solve the problem.
+
+Input
+The first line contains string s of length n (2 ≤ n ≤ 105). It is guaranteed that the given string only consists of characters "." and "#".
+
+The next line contains integer m (1 ≤ m ≤ 105) — the number of queries. Each of the next m lines contains the description of the corresponding query. The i-th line contains integers li, ri (1 ≤ li < ri ≤ n).
+
+Output
+Print m integers — the answers to the queries in the order in which they are given in the input.
+
+D. Same Differences
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given an array a
+ of n
+ integers. Count the number of pairs of indices (i,j)
+ such that i<j
+ and aj−ai=j−i
+.
+
+Input
+The first line contains one integer t
+ (1≤t≤104
+). Then t
+ test cases follow.
+
+The first line of each test case contains one integer n
+ (1≤n≤2⋅105
+).
+
+The second line of each test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤n
+) — array a
+.
+
+It is guaranteed that the sum of n
+ over all test cases does not exceed 2⋅105
+.
+
+Output
+For each test case output the number of pairs of indices (i,j)
+ such that i<j
+ and aj−ai=j−i
+.
+
+Example
+
+A. Maximum Increase
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given array consisting of n integers. Your task is to find the maximum length of an increasing subarray of the given array.
+
+A subarray is the sequence of consecutive elements of the array. Subarray is called increasing if each element of this subarray strictly greater than previous.
+
+Input
+The first line contains single positive integer n (1 ≤ n ≤ 105) — the number of integers.
+
+The second line contains n positive integers a1, a2, ..., an (1 ≤ ai ≤ 109).
+
+Output
+Print the maximum length of an increasing subarray of the given array.
+
+Examples
+
+A. Dreamoon and Stairs
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Dreamoon wants to climb up a stair of n steps. He can climb 1 or 2 steps at each move. Dreamoon wants the number of moves to be a multiple of an integer m.
+
+What is the minimal number of moves making him climb to the top of the stairs that satisfies his condition?
+
+Input
+The single line contains two space separated integers n, m (0 < n ≤ 10000, 1 < m ≤ 10).
+
+Output
+Print a single integer — the minimal number of moves being a multiple of m. If there is no way he can climb satisfying condition print  - 1 instead.
+
+Examples
+
+B. Atilla's Favorite Problem
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+In order to write a string, Atilla needs to first learn all letters that are contained in the string.
+
+Atilla needs to write a message which can be represented as a string s
+. He asks you what is the minimum alphabet size required so that one can write this message.
+
+The alphabet of size x
+ (1≤x≤26
+) contains only the first x
+ Latin letters. For example an alphabet of size 4
+ contains only the characters a
+, b
+, c
+ and d
+.
+
+Input
+The first line contains a single integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+The first line of each test case contains a single integer n
+ (1≤n≤100
+) — the length of the string.
+
+The second line of each test case contains a string s
+ of length n
+, consisting of lowercase Latin letters.
+
+Output
+For each test case, output a single integer — the minimum alphabet size required to so that Atilla can write his message s
+.
+
+A. Perfect Permutation
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+A permutation is a sequence of integers p1, p2, ..., pn, consisting of n distinct positive integers, each of them doesn't exceed n. Let's denote the i-th element of permutation p as pi. We'll call number n the size of permutation p1, p2, ..., pn.
+
+Nickolas adores permutations. He likes some permutations more than the others. He calls such permutations perfect. A perfect permutation is such permutation p that for any i (1 ≤ i ≤ n) (n is the permutation size) the following equations hold ppi = i and pi ≠ i. Nickolas asks you to print any perfect permutation of size n for the given n.
+
+Input
+A single line contains a single integer n (1 ≤ n ≤ 100) — the permutation size.
+
+Output
+If a perfect permutation of size n doesn't exist, print a single integer -1. Otherwise print n distinct integers from 1 to n, p1, p2, ..., pn — permutation p, that is perfect. Separate printed numbers by whitespaces.
+
+A. Favorite Sequence
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Polycarp has a favorite sequence a[1…n]
+ consisting of n
+ integers. He wrote it out on the whiteboard as follows:
+
+he wrote the number a1
+ to the left side (at the beginning of the whiteboard);
+he wrote the number a2
+ to the right side (at the end of the whiteboard);
+then as far to the left as possible (but to the right from a1
+), he wrote the number a3
+;
+then as far to the right as possible (but to the left from a2
+), he wrote the number a4
+;
+Polycarp continued to act as well, until he wrote out the entire sequence on the whiteboard.
+The beginning of the result looks like this (of course, if n≥4
+).
+For example, if n=7
+ and a=[3,1,4,1,5,9,2]
+, then Polycarp will write a sequence on the whiteboard [3,4,5,2,9,1,1]
+.
+
+You saw the sequence written on the whiteboard and now you want to restore Polycarp's favorite sequence.
+
+Input
+The first line contains a single positive integer t
+ (1≤t≤300
+) — the number of test cases in the test. Then t
+ test cases follow.
+
+The first line of each test case contains an integer n
+ (1≤n≤300
+) — the length of the sequence written on the whiteboard.
+
+The next line contains n
+ integers b1,b2,…,bn
+ (1≤bi≤109
+) — the sequence written on the whiteboard.
+
+Output
+Output t
+ answers to the test cases. Each answer — is a sequence a
+ that Polycarp wrote out on the whiteboard.
+
+Example
+
+A. Odd One Out
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given three digits a
+, b
+, c
+. Two of them are equal, but the third one is different from the other two.
+
+Find the value that occurs exactly once.
+
+Input
+The first line contains a single integer t
+ (1≤t≤270
+) — the number of test cases.
+
+The only line of each test case contains three digits a
+, b
+, c
+ (0≤a
+, b
+, c≤9
+). Two of the digits are equal, but the third one is different from the other two.
+
+Output
+For each test case, output the value that occurs exactly once.
+
+Example
+
+A. Flipping Game
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Iahub got bored, so he invented a game to be played on paper.
+
+He writes n integers a1, a2, ..., an. Each of those integers can be either 0 or 1. He's allowed to do exactly one move: he chooses two indices i and j (1 ≤ i ≤ j ≤ n) and flips all values ak for which their positions are in range [i, j] (that is i ≤ k ≤ j). Flip the value of x means to apply operation x = 1 - x.
+
+The goal of the game is that after exactly one move to obtain the maximum number of ones. Write a program to solve the little game of Iahub.
+
+Input
+The first line of the input contains an integer n (1 ≤ n ≤ 100). In the second line of the input there are n integers: a1, a2, ..., an. It is guaranteed that each of those n values is either 0 or 1.
+
+Output
+Print an integer — the maximal number of 1s that can be obtained after exactly one move.
+
+Examples
+
+A. Special Permutation
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given one integer n
+ (n>1
+).
+
+Recall that a permutation of length n
+ is an array consisting of n
+ distinct integers from 1
+ to n
+ in arbitrary order. For example, [2,3,1,5,4]
+ is a permutation of length 5
+, but [1,2,2]
+ is not a permutation (2
+ appears twice in the array) and [1,3,4]
+ is also not a permutation (n=3
+ but there is 4
+ in the array).
+
+Your task is to find a permutation p
+ of length n
+ that there is no index i
+ (1≤i≤n
+) such that pi=i
+ (so, for all i
+ from 1
+ to n
+ the condition pi≠i
+ should be satisfied).
+
+You have to answer t
+ independent test cases.
+
+If there are several answers, you can print any. It can be proven that the answer exists for each n>1
+.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤100
+) — the number of test cases. Then t
+ test cases follow.
+
+The only line of the test case contains one integer n
+ (2≤n≤100
+) — the length of the permutation you have to find.
+
+Output
+For each test case, print n
+ distinct integers p1,p2,…,pn
+ — a permutation that there is no index i
+ (1≤i≤n
+) such that pi=i
+ (so, for all i
+ from 1
+ to n
+ the condition pi≠i
+ should be satisfied).
+
+If there are several answers, you can print any. It can be proven that the answer exists for each n>1
+.
+
+Example
+
+A. Array with Odd Sum
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given an array a
+ consisting of n
+ integers.
+
+In one move, you can choose two indices 1≤i,j≤n
+ such that i≠j
+ and set ai:=aj
+. You can perform such moves any number of times (possibly, zero). You can choose different indices in different operations. The operation := is the operation of assignment (i.e. you choose i
+ and j
+ and replace ai
+ with aj
+).
+
+Your task is to say if it is possible to obtain an array with an odd (not divisible by 2
+) sum of elements.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤2000
+) — the number of test cases.
+
+The next 2t
+ lines describe test cases. The first line of the test case contains one integer n
+ (1≤n≤2000
+) — the number of elements in a
+. The second line of the test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤2000
+), where ai
+ is the i
+-th element of a
+.
+
+It is guaranteed that the sum of n
+ over all test cases does not exceed 2000
+ (∑n≤2000
+).
+
+Output
+For each test case, print the answer on it — "YES" (without quotes) if it is possible to obtain the array with an odd sum of elements, and "NO" otherwise.
+
+A. Most Unstable Array
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given two integers n
+ and m
+. You have to construct the array a
+ of length n
+ consisting of non-negative integers (i.e. integers greater than or equal to zero) such that the sum of elements of this array is exactly m
+ and the value ∑i=1n−1|ai−ai+1|
+ is the maximum possible. Recall that |x|
+ is the absolute value of x
+.
+
+In other words, you have to maximize the sum of absolute differences between adjacent (consecutive) elements. For example, if the array a=[1,3,2,5,5,0]
+ then the value above for this array is |1−3|+|3−2|+|2−5|+|5−5|+|5−0|=2+1+3+0+5=11
+. Note that this example doesn't show the optimal answer but it shows how the required value for some array is calculated.
+
+You have to answer t
+ independent test cases.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤104
+) — the number of test cases. Then t
+ test cases follow.
+
+The only line of the test case contains two integers n
+ and m
+ (1≤n,m≤109
+) — the length of the array and its sum correspondingly.
+
+Output
+For each test case, print the answer — the maximum possible value of ∑i=1n−1|ai−ai+1|
+ for the array a
+ consisting of n
+ non-negative integers with the sum m
+.
+
+Example
+
+B. Sereja and Suffixes
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Sereja has an array a, consisting of n integers a1, a2, ..., an. The boy cannot sit and do nothing, he decided to study an array. Sereja took a piece of paper and wrote out m integers l1, l2, ..., lm (1 ≤ li ≤ n). For each number li he wants to know how many distinct numbers are staying on the positions li, li + 1, ..., n. Formally, he want to find the number of distinct numbers among ali, ali + 1, ..., an.?
+
+Sereja wrote out the necessary array elements but the array was so large and the boy was so pressed for time. Help him, find the answer for the described question for each li.
+
+Input
+The first line contains two integers n and m (1 ≤ n, m ≤ 105). The second line contains n integers a1, a2, ..., an (1 ≤ ai ≤ 105) — the array elements.
+
+Next m lines contain integers l1, l2, ..., lm. The i-th line contains integer li (1 ≤ li ≤ n).
+
+Output
+Print m lines — on the i-th line print the answer to the number li.
+
+A. Arpa’s hard exam and Mehrdad’s naive cheat
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+There exists an island called Arpa’s land, some beautiful girls live there, as ugly ones do.
+
+Mehrdad wants to become minister of Arpa’s land. Arpa has prepared an exam. Exam has only one question, given n, print the last digit of 1378n.
+
+
+Mehrdad has become quite confused and wants you to help him. Please help, although it's a naive cheat.
+
+Input
+The single line of input contains one integer n (0  ≤  n  ≤  109).
+
+Output
+Print single integer — the last digit of 1378n.
+
+C. Kefa and Park
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Kefa decided to celebrate his first big salary by going to the restaurant.
+
+He lives by an unusual park. The park is a rooted tree consisting of n vertices with the root at vertex 1. Vertex 1 also contains Kefa's house. Unfortunaely for our hero, the park also contains cats. Kefa has already found out what are the vertices with cats in them.
+
+The leaf vertices of the park contain restaurants. Kefa wants to choose a restaurant where he will go, but unfortunately he is very afraid of cats, so there is no way he will go to the restaurant if the path from the restaurant to his house contains more than m consecutive vertices with cats.
+
+Your task is to help Kefa count the number of restaurants where he can go.
+
+Input
+The first line contains two integers, n and m (2 ≤ n ≤ 105, 1 ≤ m ≤ n) — the number of vertices of the tree and the maximum number of consecutive vertices with cats that is still ok for Kefa.
+
+The second line contains n integers a1, a2, ..., an, where each ai either equals to 0 (then vertex i has no cat), or equals to 1 (then vertex i has a cat).
+
+Next n - 1 lines contains the edges of the tree in the format "xi yi" (without the quotes) (1 ≤ xi, yi ≤ n, xi ≠ yi), where xi and yi are the vertices of the tree, connected by an edge.
+
+It is guaranteed that the given set of edges specifies a tree.
+
+Output
+A single integer — the number of distinct leaves of a tree the path to which from Kefa's home contains at most m consecutive vertices with cats.
+
+B. Grab the Candies
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Mihai and Bianca are playing with bags of candies. They have a row a
+ of n
+ bags of candies. The i
+-th bag has ai
+ candies. The bags are given to the players in the order from the first bag to the n
+-th bag.
+
+If a bag has an even number of candies, Mihai grabs the bag. Otherwise, Bianca grabs the bag. Once a bag is grabbed, the number of candies in it gets added to the total number of candies of the player that took it.
+
+Mihai wants to show off, so he wants to reorder the array so that at any moment (except at the start when they both have no candies), Mihai will have strictly more candies than Bianca. Help Mihai find out if such a reordering exists.
+
+Input
+The first line of the input contains an integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+The first line of each test case contains a single integer n
+ (1≤n≤100
+) — the number of bags in the array.
+
+The second line of each test case contains n
+ space-separated integers ai
+ (1≤ai≤100
+) — the number of candies in each bag.
+
+Output
+For each test case, output "YES" (without quotes) if such a reordering exists, and "NO" (without quotes) otherwise.
+
+You can output the answer in any case (for example, the strings "yEs", "yes", "Yes" and "YES" will be recognized as a positive answer).
+
+A. Phoenix and Balance
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Phoenix has n
+ coins with weights 21,22,…,2n
+. He knows that n
+ is even.
+
+He wants to split the coins into two piles such that each pile has exactly n2
+ coins and the difference of weights between the two piles is minimized. Formally, let a
+ denote the sum of weights in the first pile, and b
+ denote the sum of weights in the second pile. Help Phoenix minimize |a−b|
+, the absolute value of a−b
+.
+
+Input
+The input consists of multiple test cases. The first line contains an integer t
+ (1≤t≤100
+) — the number of test cases.
+
+The first line of each test case contains an integer n
+ (2≤n≤30
+; n
+ is even) — the number of coins that Phoenix has.
+
+Output
+For each test case, output one integer — the minimum possible difference of weights between the two piles.
+
+Example
+
+B. Ten Words of Wisdom
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+In the game show "Ten Words of Wisdom", there are n
+ participants numbered from 1
+ to n
+, each of whom submits one response. The i
+-th response is ai
+ words long and has quality bi
+. No two responses have the same quality, and at least one response has length at most 10
+.
+
+The winner of the show is the response which has the highest quality out of all responses that are not longer than 10
+ words. Which response is the winner?
+
+Input
+The first line contains a single integer t
+ (1≤t≤100
+) — the number of test cases.
+
+The first line of each test case contains a single integer n
+ (1≤n≤50
+) — the number of responses.
+
+Then n
+ lines follow, the i
+-th of which contains two integers ai
+ and bi
+ (1≤ai,bi≤50
+) — the number of words and the quality of the i
+-th response, respectively.
+
+Additional constraints on the input: in each test case, at least one value of i
+ satisfies ai≤10
+, and all values of bi
+ are distinct.
+
+Output
+For each test case, output a single line containing one integer x
+ (1≤x≤n
+) — the winner of the show, according to the rules given in the statement.
+
+It can be shown that, according to the constraints in the statement, exactly one winner exists for each test case.
+
+Example
+
+A. Two Elevators
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Vlad went into his appartment house entrance, now he is on the 1
+-th floor. He was going to call the elevator to go up to his apartment.
+
+There are only two elevators in his house. Vlad knows for sure that:
+
+the first elevator is currently on the floor a
+ (it is currently motionless),
+the second elevator is located on floor b
+ and goes to floor c
+ (b≠c
+). Please note, if b=1
+, then the elevator is already leaving the floor 1
+ and Vlad does not have time to enter it.
+If you call the first elevator, it will immediately start to go to the floor 1
+. If you call the second one, then first it will reach the floor c
+ and only then it will go to the floor 1
+. It takes |x−y|
+ seconds for each elevator to move from floor x
+ to floor y
+.
+
+Vlad wants to call an elevator that will come to him faster. Help him choose such an elevator.
+
+Input
+The first line of the input contains the only t
+ (1≤t≤104
+) — the number of test cases.
+
+This is followed by t
+ lines, three integers each a
+, b
+ and c
+ (1≤a,b,c≤108
+, b≠c
+) — floor numbers described in the statement.
+
+Output
+Output t
+ numbers, each of which is the answer to the corresponding test case. As an answer, output:
+
+1
+, if it is better to call the first elevator;
+2
+, if it is better to call the second one;
+3
+, if it doesn't matter which elevator to call (both elevators will arrive in the same time).
+Example
+
+C. Word on the Paper
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+On an 8×8
+ grid of dots, a word consisting of lowercase Latin letters is written vertically in one column, from top to bottom. What is it?
+
+Input
+The input consists of multiple test cases. The first line of the input contains a single integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+Each test case consists of 8
+ lines, each containing 8
+ characters. Each character in the grid is either .
+ (representing a dot) or a lowercase Latin letter (a
+–z
+).
+
+The word lies entirely in a single column and is continuous from the beginning to the ending (without gaps). See the sample input for better understanding.
+
+Output
+For each test case, output a single line containing the word made up of lowercase Latin letters (a
+–z
+) that is written vertically in one column from top to bottom.
+
+Example
+
+B. Triple
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given an array a
+ of n
+ elements, print any value that appears at least three times or print -1 if there is no such value.
+
+Input
+The first line contains an integer t
+ (1≤t≤104
+) — the number of test cases.
+
+The first line of each test case contains an integer n
+ (1≤n≤2⋅105
+) — the length of the array.
+
+The second line of each test case contains n
+ integers a1,a2,…,an
+ (1≤ai≤n
+) — the elements of the array.
+
+It is guaranteed that the sum of n
+ over all test cases does not exceed 2⋅105
+.
+
+Output
+For each test case, print any value that appears at least three times or print -1 if there is no such value.
+
+Example
+
+A. Park Lighting
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Due to the coronavirus pandemic, city authorities obligated citizens to keep a social distance. The mayor of the city Semyon wants to light up Gluharniki park so that people could see each other even at night to keep the social distance.
+
+The park is a rectangular table with n
+ rows and m
+ columns, where the cells of the table are squares, and the boundaries between the cells are streets. External borders are also streets. Every street has length 1
+. For example, park with n=m=2
+ has 12
+ streets.
+
+You were assigned to develop a plan for lighting the park. You can put lanterns in the middle of the streets. The lamp lights two squares near it (or only one square if it stands on the border of the park).
+
+The park sizes are: n=4
+, m=5
+. The lighted squares are marked yellow. Please note that all streets have length 1
+. Lanterns are placed in the middle of the streets. In the picture not all the squares are lit.
+Semyon wants to spend the least possible amount of money on lighting but also wants people throughout the park to keep a social distance. So he asks you to find the minimum number of lanterns that are required to light all the squares.
+
+Input
+The first line contains a single integer t
+ (1≤t≤104
+) — the number of test cases in the input. Then t
+ test cases follow.
+
+Each test case is a line containing two integers n
+, m
+ (1≤n,m≤104
+) — park sizes.
+
+Output
+Print t
+ answers to the test cases. Each answer must be a single integer — the minimum number of lanterns that are required to light all the squares.
+
+Example
+
+C. Prepend and Append
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Timur initially had a binary string†
+ s
+ (possibly of length 0
+). He performed the following operation several (possibly zero) times:
+
+Add 0
+ to one end of the string and 1
+ to the other end of the string. For example, starting from the string 1011
+, you can obtain either 010111
+ or 110110
+.
+You are given Timur's final string. What is the length of the shortest possible string he could have started with?
+†
+ A binary string is a string (possibly the empty string) whose characters are either 0
+ or 1
+.
+
+Input
+The first line of the input contains an integer t
+ (1≤t≤100
+) — the number of testcases.
+
+The first line of each test case contains an integer n
+ (1≤n≤2000
+) — the length of Timur's final string.
+
+The second line of each test case contains a string s
+ of length n
+ consisting of characters 0
+ or 1
+, denoting the final string.
+
+Output
+For each test case, output a single nonnegative integer — the shortest possible length of Timur's original string. Note that Timur's original string could have been empty, in which case you should output 0
+.
+
+Example
+
+B. Pashmak and Flowers
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Pashmak decided to give Parmida a pair of flowers from the garden. There are n flowers in the garden and the i-th of them has a beauty number bi. Parmida is a very strange girl so she doesn't want to have the two most beautiful flowers necessarily. She wants to have those pairs of flowers that their beauty difference is maximal possible!
+
+Your task is to write a program which calculates two things:
+
+The maximum beauty difference of flowers that Pashmak can give to Parmida.
+The number of ways that Pashmak can pick the flowers. Two ways are considered different if and only if there is at least one flower that is chosen in the first way and not chosen in the second way.
+Input
+The first line of the input contains n (2 ≤ n ≤ 2·105). In the next line there are n space-separated integers b1, b2, ..., bn (1 ≤ bi ≤ 109).
+
+Output
+The only line of output should contain two integers. The maximum beauty difference and the number of ways this may happen, respectively.
+
+Examples
+input
+
+A. Road To Zero
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given two integers x
+ and y
+. You can perform two types of operations:
+
+Pay a
+ dollars and increase or decrease any of these integers by 1
+. For example, if x=0
+ and y=7
+ there are four possible outcomes after this operation:
+x=0
+, y=6
+;
+x=0
+, y=8
+;
+x=−1
+, y=7
+;
+x=1
+, y=7
+.
+Pay b
+ dollars and increase or decrease both integers by 1
+. For example, if x=0
+ and y=7
+ there are two possible outcomes after this operation:
+x=−1
+, y=6
+;
+x=1
+, y=8
+.
+Your goal is to make both given integers equal zero simultaneously, i.e. x=y=0
+. There are no other requirements. In particular, it is possible to move from x=1
+, y=0
+ to x=y=0
+.
+
+Calculate the minimum amount of dollars you have to spend on it.
+
+Input
+The first line contains one integer t
+ (1≤t≤100
+) — the number of testcases.
+
+The first line of each test case contains two integers x
+ and y
+ (0≤x,y≤109
+).
+
+The second line of each test case contains two integers a
+ and b
+ (1≤a,b≤109
+).
+
+Output
+For each test case print one integer — the minimum amount of dollars you have to spend.
+
+A. LCM Problem
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Let LCM(x,y)
+ be the minimum positive integer that is divisible by both x
+ and y
+. For example, LCM(13,37)=481
+, LCM(9,6)=18
+.
+
+You are given two integers l
+ and r
+. Find two integers x
+ and y
+ such that l≤x<y≤r
+ and l≤LCM(x,y)≤r
+.
+
+Input
+The first line contains one integer t
+ (1≤t≤10000
+) — the number of test cases.
+
+Each test case is represented by one line containing two integers l
+ and r
+ (1≤l<r≤109
+).
+
+Output
+For each test case, print two integers:
+
+if it is impossible to find integers x
+ and y
+ meeting the constraints in the statement, print two integers equal to −1
+;
+otherwise, print the values of x
+ and y
+ (if there are multiple valid answers, you may print any of them).
+Example
+
+A. Casimir's String Solitaire
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Casimir has a string s
+ which consists of capital Latin letters 'A', 'B', and 'C' only. Each turn he can choose to do one of the two following actions:
+
+he can either erase exactly one letter 'A' and exactly one letter 'B' from arbitrary places of the string (these letters don't have to be adjacent);
+or he can erase exactly one letter 'B' and exactly one letter 'C' from arbitrary places in the string (these letters don't have to be adjacent).
+Therefore, each turn the length of the string is decreased exactly by 2
+. All turns are independent so for each turn, Casimir can choose any of two possible actions.
+
+For example, with s
+ =
+ "ABCABC" he can obtain a string s
+ =
+ "ACBC" in one turn (by erasing the first occurrence of 'B' and the second occurrence of 'A'). There are also many other options for a turn aside from this particular example.
+
+For a given string s
+ determine whether there is a sequence of actions leading to an empty string. In other words, Casimir's goal is to erase all letters from the string. Is there a way to do this?
+
+Input
+The first line contains an integer t
+ (1≤t≤1000
+) — the number of test cases.
+
+Each test case is described by one string s
+, for which you need to determine if it can be fully erased by some sequence of turns. The string s
+ consists of capital letters 'A', 'B', 'C' and has a length from 1
+ to 50
+ letters, inclusive.
+
+Output
+Print t
+ lines, each line containing the answer to the corresponding test case. The answer to a test case should be YES if there is a way to fully erase the corresponding string and NO otherwise.
+
+You may print every letter in any case you want (so, for example, the strings yEs, yes, Yes, and YES will all be recognized as positive answers).
+
+Example
+
+A. EhAb AnD gCd
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given a positive integer x
+. Find any such 2
+ positive integers a
+ and b
+ such that GCD(a,b)+LCM(a,b)=x
+.
+
+As a reminder, GCD(a,b)
+ is the greatest integer that divides both a
+ and b
+. Similarly, LCM(a,b)
+ is the smallest integer such that both a
+ and b
+ divide it.
+
+It's guaranteed that the solution always exists. If there are several such pairs (a,b)
+, you can output any of them.
+
+Input
+The first line contains a single integer t
+ (1≤t≤100)
+  — the number of testcases.
+
+Each testcase consists of one line containing a single integer, x
+ (2≤x≤109)
+.
+
+Output
+For each testcase, output a pair of positive integers a
+ and b
+ (1≤a,b≤109)
+ such that GCD(a,b)+LCM(a,b)=x
+. It's guaranteed that the solution always exists. If there are several such pairs (a,b)
+, you can output any of them.
+
+Example
+input
+
+A. Three Pairwise Maximums
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+You are given three positive (i.e. strictly greater than zero) integers x
+, y
+ and z
+.
+
+Your task is to find positive integers a
+, b
+ and c
+ such that x=max(a,b)
+, y=max(a,c)
+ and z=max(b,c)
+, or determine that it is impossible to find such a
+, b
+ and c
+.
+
+You have to answer t
+ independent test cases. Print required a
+, b
+ and c
+ in any (arbitrary) order.
+
+Input
+The first line of the input contains one integer t
+ (1≤t≤2⋅104
+) — the number of test cases. Then t
+ test cases follow.
+
+The only line of the test case contains three integers x
+, y
+, and z
+ (1≤x,y,z≤109
+).
+
+Output
+For each test case, print the answer:
+
+"NO" in the only line of the output if a solution doesn't exist;
+or "YES" in the first line and any valid triple of positive integers a
+, b
+ and c
+ (1≤a,b,c≤109
+) in the second line. You can print a
+, b
+ and c
+ in any order.
+Example
