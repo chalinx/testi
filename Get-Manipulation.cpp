@@ -23,6 +23,7 @@ using namespace std;
 int Get_manipulation(int n,int i){
 	int mask=(1<<i);// el i es la posicion del bit
 	return n&mask?1:0;
+	cout<<"hola";
 }
 
 void Set_manipulation(int &n, int i){
