@@ -5,6 +5,7 @@ using namespace std;
 
 void actualizar(array<int,6>&arr,int i,int val){
 	arr[i]=val;
+	cout<<"hola";
 }
 
 void mostrar(array<int,6>arr){
