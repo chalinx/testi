@@ -16,27 +16,14 @@
 #define pii pair<int,int>
 
 
+int formas(int n){
+	if(n<4)return 1;
+	//if(n==4)return 2;
+	return formas(n-1)+formas(n-4);
+}
 
 using namespace std;
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
-}
-
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
 
@@ -45,17 +32,10 @@ freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+		
+cout<<formas(1);
 	return 0;
 }
-
 
 
 

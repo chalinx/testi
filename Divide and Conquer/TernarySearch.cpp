@@ -15,28 +15,31 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+double f(double x){
+	double y=-(x*x)+2*x;
+	return y;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
+void solve(){
+		
+	double left=-100;
+	double rigth=100;
+
+	while(rigth-left>0.000000000000001){
+		double mid1=(2*left+rigth)/3;
+		double mid2=(left+2*rigth)/3;
+
+		if(f(mid1)<f(mid2)) left=mid1;
+		else rigth=mid2;
+	}
+
+	cout<<setprecision(15)<<fixed;
+	cout<<left<<" "<<rigth<<endl;
+
 }
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
 
@@ -45,17 +48,10 @@ freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t=1;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

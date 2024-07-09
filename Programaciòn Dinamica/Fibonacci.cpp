@@ -12,31 +12,48 @@
 #define fl(i,a,n,w) for(ll i=a;i<n;i+=w)
 #define fr first
 #define se second
+#define sz(a) a.size()
+#define mstr(r) for(auto i:r)cout<<i<<" ";
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+int cont=0;
+vi memo;
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+int fibmemo(int n){
+	cont++;
+	if(n<=2)return 1;
+	if(memo[n]!=-1)return memo[n];
+	return memo[n]=fibmemo(n-1)+fibmemo(n-2);
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
+void fib(int n){
+	
+	memo.resize(n+1,-1);
+
+	cout<<fibmemo(n)<<endl;
+	cout<<cont<<endl;
 }
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
+void fibtabu(int n){
+
+	vi r(n+1);
+	r[1]=1;
+	r[2]=1;
+
+	fi(i,3,n+1,1){
+	   r[i]=r[i-1]+r[i-2];
+	}
+	cout<<r[n]<<endl;
 }
+
+void solve(){
+
+	fibtabu(6);
+}
+
 
 int main(){
 
@@ -45,17 +62,10 @@ freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t=1;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

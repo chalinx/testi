@@ -15,28 +15,33 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+int contar_formas(int n){
+
+	if(n==1)return 2;
+	if(n==2)return 3;
+	return contar_formas(n-1)+contar_formas(n-2);
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
+int sum=0;
+void imprimir_formas(string r,char w,int n){
+
+	if(n==0){
+			sum++;
+		cout<<r<<" "; return;
+	
+	}
+
+	imprimir_formas(r+w,'0',n-1);
+	if(w!='1')
+		imprimir_formas(r+w,'1',n-1);
+	
+
 }
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
+
 
 int main(){
 
@@ -45,17 +50,13 @@ freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+		
+	
+	cout<<contar_formas(2)<<endl;
+	imprimir_formas("",'0',4);cout<<endl;
+	cout<<sum;
 	return 0;
 }
-
 
 
 
