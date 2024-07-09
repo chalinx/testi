@@ -1,0 +1,194 @@
+digraph {
+	"0_0" [label="Día 0
+Descanso: 0"]
+	"1_0" [label="Día 1
+Descanso: 0"]
+	"0_0" -> "1_0" [label=Trabajo]
+	"2_0" [label="Día 2
+Descanso: 0"]
+	"1_0" -> "2_0" [label=Trabajo]
+	"3_0" [label="Día 3
+Descanso: 0"]
+	"2_0" -> "3_0" [label=Trabajo]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_0" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_1" [label="Día 4
+Descanso: 1"]
+	"3_0" -> "4_1" [label=Descanso]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_1" -> "5_0_end" [label=Trabajo]
+	"5_2_end" [label="Día 5
+Descanso: 2
+(Fin)" color=blue]
+	"4_1" -> "5_2_end" [label=Descanso]
+	"3_1" [label="Día 3
+Descanso: 1"]
+	"2_0" -> "3_1" [label=Descanso]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_1" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_2" [label="Día 4
+Descanso: 2"]
+	"3_1" -> "4_2" [label=Descanso]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_2" -> "5_0_end" [label=Trabajo]
+	"5_3_invalid" [label="Día 5
+Descanso: 3
+(Invalido)" color=red]
+	"4_2" -> "5_3_invalid" [label=Descanso]
+	"2_1" [label="Día 2
+Descanso: 1"]
+	"1_0" -> "2_1" [label=Descanso]
+	"3_0" [label="Día 3
+Descanso: 0"]
+	"2_1" -> "3_0" [label=Trabajo]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_0" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_1" [label="Día 4
+Descanso: 1"]
+	"3_0" -> "4_1" [label=Descanso]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_1" -> "5_0_end" [label=Trabajo]
+	"5_2_end" [label="Día 5
+Descanso: 2
+(Fin)" color=blue]
+	"4_1" -> "5_2_end" [label=Descanso]
+	"3_2" [label="Día 3
+Descanso: 2"]
+	"2_1" -> "3_2" [label=Descanso]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_2" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_3_invalid" [label="Día 4
+Descanso: 3
+(Invalido)" color=red]
+	"3_2" -> "4_3_invalid" [label=Descanso]
+	"1_1" [label="Día 1
+Descanso: 1"]
+	"0_0" -> "1_1" [label=Descanso]
+	"2_0" [label="Día 2
+Descanso: 0"]
+	"1_1" -> "2_0" [label=Trabajo]
+	"3_0" [label="Día 3
+Descanso: 0"]
+	"2_0" -> "3_0" [label=Trabajo]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_0" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_1" [label="Día 4
+Descanso: 1"]
+	"3_0" -> "4_1" [label=Descanso]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_1" -> "5_0_end" [label=Trabajo]
+	"5_2_end" [label="Día 5
+Descanso: 2
+(Fin)" color=blue]
+	"4_1" -> "5_2_end" [label=Descanso]
+	"3_1" [label="Día 3
+Descanso: 1"]
+	"2_0" -> "3_1" [label=Descanso]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_1" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_2" [label="Día 4
+Descanso: 2"]
+	"3_1" -> "4_2" [label=Descanso]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_2" -> "5_0_end" [label=Trabajo]
+	"5_3_invalid" [label="Día 5
+Descanso: 3
+(Invalido)" color=red]
+	"4_2" -> "5_3_invalid" [label=Descanso]
+	"2_2" [label="Día 2
+Descanso: 2"]
+	"1_1" -> "2_2" [label=Descanso]
+	"3_0" [label="Día 3
+Descanso: 0"]
+	"2_2" -> "3_0" [label=Trabajo]
+	"4_0" [label="Día 4
+Descanso: 0"]
+	"3_0" -> "4_0" [label=Trabajo]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_0" -> "5_0_end" [label=Trabajo]
+	"5_1_end" [label="Día 5
+Descanso: 1
+(Fin)" color=blue]
+	"4_0" -> "5_1_end" [label=Descanso]
+	"4_1" [label="Día 4
+Descanso: 1"]
+	"3_0" -> "4_1" [label=Descanso]
+	"5_0_end" [label="Día 5
+Descanso: 0
+(Fin)" color=blue]
+	"4_1" -> "5_0_end" [label=Trabajo]
+	"5_2_end" [label="Día 5
+Descanso: 2
+(Fin)" color=blue]
+	"4_1" -> "5_2_end" [label=Descanso]
+	"3_3_invalid" [label="Día 3
+Descanso: 3
+(Invalido)" color=red]
+	"2_2" -> "3_3_invalid" [label=Descanso]
+}
