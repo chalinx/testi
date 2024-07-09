@@ -19,44 +19,32 @@
 
 using namespace std;
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+int powerFunction(int a,int b){
+	if(b==0)return 1;
+	return a*powerFunction(a,b-1);
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
+int fastPower(int a,int b){
+	if(b==0)return 1;
+	int p=fastPower(a,b/2);
+	if(b%2==1)return a*p*p; 
+	return p*p;
 }
+	
 
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
+
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
-
+	cout<<powerFunction(2,8)<<endl;
+	cout<<fastPower(2,10)<<endl;	
 	return 0;
 }
-
 
 
 

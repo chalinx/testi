@@ -15,48 +15,38 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
+int tol(int n){
+	int cont =0;
+	for(int i=1;i*i<=n;i++){
+		if(n%i==0)cont++;
+	}
+	return cont;
+}
+void solve(){
+		
+	int n; cin>>n;
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+	
+	int w=sqrt(n);
+	if(tol(n)==1)cout<<1;
+	else if(w*w==n)cout<<2*(tol(n)-1);
+	else cout<<2*(tol(n)-1)+1;
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
-
-
-
+	int t=1;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

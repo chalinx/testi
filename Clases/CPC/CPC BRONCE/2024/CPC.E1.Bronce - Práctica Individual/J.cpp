@@ -15,48 +15,59 @@
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 
-
-
 using namespace std;
 
-
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
+void solve(){
+	int n; cin>>n;
+	vector<vector<int>>r;
+	int a;
+	fi(i,0,n,1){
+		cin>>a;
+		if(a==4){
+			vector<int> w={4};
+			r.pb(w);
+		}
+		else{
+			int w=0;
+			fi(j,0,r.size(),1){
+				bool encontrado=binary_search(all(r[j]),a);
+				if(!encontrado) {
+					r[j].pb(a);
+					break;
+				}
+			}
+		}
+	}
+	/*
+	vi q(6)={4,8,15,16,23};
+	int cont=0;
+	fi(i,0,r.size(),1){
+		if(r[i].size()==6 and r[i])
+		if(r[i]!=q)cont+=r[i].size();
+	}
+	*/
+	fi(i,0,r.size(),1){
+		fi(j,0,r[i].size(),1){
+			cout<<r[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+	
 }
 
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
 
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
 
-
-
+	int t=1;
+	while(t--){
+		solve();
+	}
 
 	return 0;
 }
-
-
-
-

@@ -20,43 +20,46 @@
 using namespace std;
 
 
-int Get_manipulation(int n,int i){
-	int mask=(1<<i);// el i es la posicion del bit
-	return n&mask?1:0;
-	cout<<"hola";
-}
-
-void Set_manipulation(int &n, int i){
-	int mask=(1<<i);
-	n=(n|mask);
-	cout<<"asd";
-}
-
-void clear_manipulation(int &n,int i){
-	int mask=~(1<<i);
-	n=(n&mask);
-	cout<<"s";
-}
-
 int main(){
-
 
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
 #endif
 fast
-	 int n=5;
-	cout<< Get_manipulation(n,0);
-	Get_manipulation(n,0);
-	cout<<n;
+	int n; cin>>n;
+	while(n--){
+		int m; cin>>m;
+		multimap<int,string> r;
+		int a;string b;
+		while(m--){
+			cin>>a>>b;
+			r.insert(make_pair(a,b));
+		}
+		int c;
+		a=c=0;
+		int cont=0;
 
+		for(auto i:r){
+				if(i.second[0]=='1'&&!a){
+					a=1;cont+=i.first;
+				}
+				if(i.second[1]=='1'&&!c){
+					c=1; cont+=i.first;
+				}
+				if(i.second[0]=='1'&&i.second[1]=='1')
+					cont=min(cont,i.first);
+			}
 
+		if(a&c) cout<<cont;
+		else cout<<-1;
+		cout<<endl;
 
+		
+	}
 
 	return 0;
 }
-
 
 
 
