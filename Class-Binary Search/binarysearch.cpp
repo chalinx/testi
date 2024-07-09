@@ -20,6 +20,7 @@ using namespace std;
 
 
 int bs(int arr[],int n,int key){
+	cout<<"as";
 	int l=0;
 	int r=n-1;
 	int mid;

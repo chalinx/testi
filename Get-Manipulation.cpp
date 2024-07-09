@@ -40,6 +40,7 @@ void clear_manipulation(int &n,int i){
 
 int main(){
 
+
 #ifndef ONLINE_JUDGE
 freopen("D:/Competitiva/input.txt","r",stdin);
 freopen("D:/Competitiva/output.txt","w",stdout);
