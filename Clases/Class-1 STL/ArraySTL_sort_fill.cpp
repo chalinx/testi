@@ -13,6 +13,7 @@ void mostrar(array<int,6>arr){
 	for(int i =0;i<n;i++){
 		cout<<arr[i]<<" ";
 	}
+	cout<<"asdasd";
 }
 
 int main(){

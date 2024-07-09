@@ -10,7 +10,7 @@ cout<<endl;
 
 
 int main(){
-
+cout<<"asdasd";
 deque<int> first;			//crear deque vacios de ints
 deque<int> second(4,100);	//inicializar deque 4 ints con valor 100
 deque<int> third(second.begin(),second.end());//iterar y copiar los valores de second
