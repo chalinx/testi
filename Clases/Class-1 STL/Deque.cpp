@@ -19,7 +19,7 @@ deque<int> fourth(third);//copiar third por completo
 mostrar(second);
 mostrar(third);
 mostrar(fourth);
-
+cout<<"asd";
 // copiar array iterandolo y agregarlo en un deque
 
 int ints[]={3,1,4,5,8};
