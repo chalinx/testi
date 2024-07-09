@@ -28,6 +28,7 @@ void solve(){
 	}
 	if(x==1) cont=1;
 	cout<<cont;
+	cout<<"asd";
 }
 
 
